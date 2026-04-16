@@ -1,0 +1,44 @@
+\subsection{Concept Three: NOVAE}
+\begin{center}
+    \textit{Latin for "new," signalling a new era in cosmic exploration and the uncovering of unknown regions in space.}
+\end{center}
+\subsubsection{Background}
+% Introduction to concept three
+For concept three, a \textit{deep space} satellite design is proposed. An initial quantitative and qualitative analysis is conducted to conclude the viability, costs, and environmental impacts of such design. A \textit{deep space} satellite may be defined as \cite{DeepSpaceSatelliteDef}
+
+\begin{center}
+    \textit{"Spacecraft designed to explore distant regions of space beyond Earth's immediate surroundings."}
+\end{center}For this concept, we draw inspiration from well-established imaging satellites, including the James Webb Space Telescope (2021–present), the Spitzer Space Telescope (2003–2020), and the European Space Agency's Gaia (2013–present). Along with the HST, these satellites form the basis of our basic requirements for concept three [N1].
+\vspace{2mm}
+
+%The main benefit of a deep space orbit for an observatory is to shield the observatory from infrared radiation from nearby bodies, mainly the sun, earth and moon, as well as avoiding the shadows cast by those bodies. Another advantage is that being further away from the sun means the delicate optics and instruments used for deep space observation can be shielded from sunlight \cite{JWorbit}.
+
+These, however, do not come without drawbacks. Placing the observatory in a deep space orbit such as a Lagrange point will diminish the satellite's ability to be serviceable, as it could take up to a month to reach the orbit \cite{JWorbit}. As such the satellite and mission would have a limited lifespan.
+\vspace{2mm}
+
+More emphasis would have to be put on the reliability and redundancy of the various subsystems within the spacecraft. The repair mission to fix the Hubble Space Telescope totalled at \$700 million \cite{NASA_Hubble_Mission}. Taking into account the extra cost of reaching a deep space orbit as well as the time taken to reach there, servicing missions to the deep space orbit observatory is not possible. 
+\subsubsection{Orbit Type}
+Similar to JWST, NOVAE is positioned at the second Lagrange point (L2). The gravitational balance at L2 minimizes the fuel needed for orbit adjustments, as only small thrusts are required to maintain the satellite’s position due to the stable gravitational environment created by the Earth and Sun. NOVAE also has an unobstructed view of deep space due to its considerable distance from both the Earth and Moon, while still maintaining effective communication windows with ground stations. This position also allows NOVAE to avoid Earth and Moon shadowing, ensuring a continuous line of sight for its observations without the interruptions caused by eclipses. Additionally, the large distance from the Sun enables stable thermal control. With a carefully designed sunshield, NOVAE can maintain a consistent, low temperature needed for its instruments, as it avoids the temperature fluctuations associated with Earth's day-night cycle. This stable thermal environment, combined with L2’s continuous deep-space view, allows NOVAE to conduct extended observation periods, maximizing its time on target and enhancing the quality of deep-space imaging [N7]. However, a primary drawback of placing NOVAE at L2 is the end-of-life phase, where it cannot de-orbit and must instead be moved to a graveyard orbit, which requires a thrust mechanism. Although the debris is not directly removed, its impact is mitigated [N5].
+
+\subsubsection{Camera}
+
+\vspace{1.5mm}
+The NOVAE satellite, designed for deep space observation, follows the user-defined specifications to ensure optimal performance. Based on the requirements, the satellite must deliver high-resolution imaging with a field of view (FoV) of at least 2.7 arcminutes by 2.7 arcminutes and achieve a resolution of 0.05 arcseconds per pixel. To meet the specified FoV, calculations indicated that with a sensor width of 36.2 mm, a focal length of approximately 46.11 meters is necessary. This focal length enables the satellite to capture the required field of view while maintaining high imaging quality. Furthermore, to achieve the desired angular resolution of 0.05 arcseconds, the analysis determined that a mirror diameter ranging between 5 to 7 meters is optimal. This size is crucial to ensure that the telescope can achieve the high resolution and sensitivity needed for deep-space imaging across a broad spectrum, including ultraviolet, visible, and infrared wavelengths [N1, N2, N8,N9,N10].
+
+\vspace{1.5mm}
+\subsubsection{Design}
+Material selection is a critical aspect of satellite design, especially for ensuring mission success in the extreme environment of space. For deep-space infrared photography, the data captured by the satellite must remain uncontaminated by its own infrared radiation, which is emitted due to a core temperature above absolute zero \cite{cengel2014thermodynamics}. To mitigate this, materials with high reflectance are necessary. Similar to the approach used in the James Webb Space Telescope (JWST), large heat shields made from aluminium (reflectivity up to 95\%), silver (reflectivity up to 98\%), or gold (reflectivity up to 95\%) sheets can be deployed around the satellite’s core and camera body to minimize infrared interference \cite{spacecraftThermalControl} in addition to ensuring that the satellite can work under extreme temperatures. The 'cold' side of the satellite would contain the infrared sensors and shall operate at temperatures of $-230^{\circ}$, while the sun-facing side of the satellite would operate at $85^{\circ}$.
+\vspace{1.5mm}
+
+Additionally, NOVAE is equipped with the capability to capture certain UV light wavelengths, thus $\text{TiO}_2$ coating could be applied to minimize UV light interference from NOVAE’s structure \cite{bunte2005materials}. However, this may impact the reflectance of the metals discussed above.
+\vspace{1.5mm}
+
+A material with a high strength-to-weight ratio must be chosen to ensure structural strength requirements are met during launch while also minimizing the mass of fuel required. The structure must be able to withstand at least 6g's thus axial strength materials must be deployed; out of the most common options, these would include: aluminium alloys (structural frame), titanium alloys (high-stress points), silicon (solar panels) and carbon fiber composites (structural support) \cite{materialschoices}. A more in-depth selection should be conducted after the initial concept selection to meet international law and subsystem requirements. 
+\vspace{1.5mm}
+
+NOVAE shall be equipped with reaction wheels, gyroscopes, star trackers, and fine guidance sensors using cameras in NIR to provide data to the attitude and determination subsystems. Thrusters are available to either adjust the NOVAE's orbit or simply to reduce the momentum load on the reaction wheels allowing the NOVAE to change its position and orientation to observe objects in any direction in space [N3]. 
+
+\subsubsection{Sustainability}
+From the initially outlined material selection, the sustainability of each material must be carefully considered. In 2023, the United Kingdom ranked among the top five aluminum exporters \cite{worldbank2023aluminum}, making aluminum both accessible and potentially more sustainable due to reduced carbon emissions compared to sourcing from international suppliers [N5, N6]. For titanium, the leading exporters were primarily based in Africa, including South Africa, Mozambique, and Madagascar, where there are relatively few political restrictions \cite{worldbank2023titanium}. However, due to the considerable distance, importing titanium would require air or ship transport, necessitating an evaluation of the associated carbon emissions. Similar is true with Silicon, however, more rigorous political restrictions may apply due to the top 3 exporters being China, Norway, and Brazil \cite{worldbank2023silicon}.
+\vspace{1.5mm}
+

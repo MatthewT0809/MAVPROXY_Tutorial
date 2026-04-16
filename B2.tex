@@ -1,0 +1,69 @@
+\section{Initial System Requirements}
+System requirements are measurable performance criteria that pertain to the whole system. These requirements are very top-level when thinking about how they influence the product. From these system requirements, sub-system requirements are developed. The requirements below will be tracked and enforced through our systems engineer who will function as an integration point between all the sub-systems. 
+\begin{table}[H]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|l|c|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Subsystem Requirements}} & \textbf{Requirement} & \textbf{Source} \\ \hline
+
+\textbf{LM1} & The subsystem shall return the coordinate of the UAV with an accuracy up to 1cm. & Arbitrary \\ \hline
+
+\textbf{LM2} & The subsystem shall return a complete photo of the entire aircraft's top-down view with resolution no less than 4000x4000 pixels. & Arbitrary \\ \hline
+
+\textbf{LM3} & The subsystem shall be compatible for simulation with ROS 1. & SR \\ \hline
+
+\textbf{LM4} & The subsystem shall be modular, supporting the integration with other subsystems. & SR \\ \hline
+
+\textbf{LM5} & The subsystem shall perform signal processing. &SR  \\ \hline
+
+\textbf{LM6} & The subsystem shall support communication and other critical subsystems, reflecting requirement \textbf{COMS1}. & COMS1 \\ \hline
+
+\textbf{LM7} & The algorithm in LOCAL1 shall be verifiable by the VICON Motion Capturing System. & SR \\ \hline
+
+\textbf{LM8} & The subsystem shall not interfere with the VICON motion capturing system. &SR  \\ \hline
+
+\textbf{LM9} & The subsystem’s component Maximum Take-Off Weight (MTOW) shall not exceed 1kg. & Arbitrary \\ \hline
+
+\textbf{LM10} & The subsystem shall not interfere with the VICON motion capturing system. &SR  \\ \hline
+
+\end{tabular}%
+}
+\caption{Subsystem Requirements}
+\label{tab:SystemRequirements}
+\end{table}
+
+
+\subsection{Subsystem Requirements Justification}
+\textbf{S1}: Derived from the more top-level user needs and requirements, sustainability is outlined as a system requirement as it influences all the subsystems in the product. Sustainability is critical to maximise return on investment. Sustainable design increases reliability and allows for our satellite to function for a long time. \\
+\vspace{1.5mm}
+
+\textbf{S2}: A long lifetime will affect the build and integration of sub-systems. Justification for the long lifetime was discussed in \ref{User Requirement Justifications}, however on systems this requirement means that our sub-systems will have to be robust and include redundancies to account for the long lifetime. This is an essential system requirement as it impacts operations and our manufacturing when it comes to the systems, this is a requirement that ensures that all subsystems are keeping the operation time in mind when deriving sub-systems.\\
+\vspace{1.5mm}
+
+\textbf{S3}: Operations and spacecraft fully depend on the subsystems being well integrated. The compatibility for each sub-system is key to the telescope's overall function, an integrated system also reduces the risk of failures and ensures clean and smooth operation.\\
+\vspace{1.5mm}
+
+\textbf{S4}: This is a direct requirement that finds itself in the user requirements as \textbf{UR11}, however now it is the context of a system. This wide capability allows the telescope to be used across a wide range of scientific objectives. It is a very high-level requirement in nature as it impacts many subsystems and has knock-on effects when it comes to sizing and things like structure. Defining it in our systems requirements ensures that this goal will be met in each subsystem and be accounted for in the design.\\
+\vspace{1.5mm}
+
+\textbf{S5, S6, S8}: These requirements find themselves in the user requirements as well, the reason for the continuation of this requirement is that it is directly derived from Hubble's performance metrics. Since our telescope aims to replace and improve Hubble ensuring that it at least meets the performance of Hubble is essential. \\
+\vspace{1.5mm}
+
+\textbf{S7}: In high-resolution imaging and when long exposures are required, precise and stable pointing is an important prerequisite, in particular when dealing with faint or distant objects. This stability allows images to be sharp and clear without showing any drift or motion blur, something very important in astrophysical research. There are so many factors that go into producing a clear image that all sub-systems should actively consider how to mitigate distortion and corruption to the image since the main goal of the telescope is to provide a clear image. \\
+\vspace{1.5mm}
+
+\textbf{S9}: Launching from Earth is the standard for all modern satellites because of the current infrastructure and cost-effectiveness. Earth-based launch systems have already been established and will help keep costs down when it comes to launching. Sub-systems will have to consider the size and the behaviours of structures that occur during launch when building and integrating. \\
+\vspace{1.5mm}
+
+\textbf{S10}: An altitude of at least 560km puts our telescope in the LEO range much like the Hubble and it is ideal for many scientific satellites. At this altitude, the telescope is above most of the earth's atmosphere so distortion and light pollution are reduced. The orbit distance will have a dramatic effect on the characteristics of our subsystem, due to its large contributions to the design it is defined in the systems requirements.\\
+\vspace{1.5mm}
+
+\textbf{S11}: To meet user requirement \textbf{UR3} \& \textbf{UR4} the system needs to be able to be controlled from a ground station. This will allow for precision pointing and for users to capture desired images. It also means that sub-systems will have to be designed for manoeuvrability moving system should be created.\\
+\vspace{1.5mm}
+
+\textbf{S12, S13}: A strong communication system ensures that instructions, data, and images are well transmitted from and to the satellite and ground control. This is quite important because it means mission success. Fast processing times are important to the relevance of research. Otherwise, scientific analysis and consequently the findings are hindered. \textbf{S12} \& \textbf{S13} are defined as top-level system requirements because they aid directly towards the vision addressing the problem statement.\\
+\vspace{1.5mm}
+
+\textbf{S14}: Ensures that the system has sufficient power and is not a passive satellite.
+
