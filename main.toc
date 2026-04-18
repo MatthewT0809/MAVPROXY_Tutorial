@@ -1,20 +1,37 @@
 \contentsline {section}{\numberline {1}Pre word}{2}{section.1}%
-\contentsline {section}{\numberline {2}Setting The Foundations}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Hardware Required}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Dual-booting Procedure}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Downloading VICON SDK}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Downloading pyvicon}{9}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Merging VICON SDK into pyvicon}{10}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Setting up pyvicon}{10}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Installing Dependencies Packages}{11}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Hardware setup}{12}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Network setup}{13}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Installing Mavproxy \& Mavlink}{14}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}Drone Setup}{15}{subsection.2.11}%
-\contentsline {section}{\numberline {3}Communication Architecture}{16}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Ardupilot setup}{20}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Operation Procedure}{20}{section.4}%
-\contentsline {section}{\numberline {5}Concluding Remarks}{20}{section.5}%
-\contentsline {section}{\numberline {6}Byspoke customisation and towards future tailoring - Nura Efendic}{20}{section.6}%
-\contentsline {section}{\numberline {7}General Indoor Airmanship}{20}{section.7}%
-\contentsline {section}{\numberline {A}}{20}{appendix.A}%
+\contentsline {section}{\numberline {2}The Overall Architecture}{3}{section.2}%
+\contentsline {section}{\numberline {3}VICON Setup}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The Hardware}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Turn on the cameras}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Turn on the Host PC}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Launch the App}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Create a Camera Mask}{7}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}How to turn on the lights of Flight Arena}{9}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Calibrate the Cameras}{9}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Set Origin}{13}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Defining New Objects}{15}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Finishing}{20}{subsection.3.10}%
+\contentsline {section}{\numberline {4}Ground Control Station Setup}{21}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Hardware Required}{21}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Downloading VICON SDK}{22}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Downloading pyvicon}{27}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Merging VICON SDK into pyvicon}{28}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Setting up pyvicon}{28}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Installing Dependencies Packages}{29}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Hardware setup}{30}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Network setup}{31}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Installing Mavproxy \& Mavlink}{32}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Finishing}{33}{subsection.4.10}%
+\contentsline {section}{\numberline {5}Drone Setup}{34}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Hardware Required}{34}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}ESP8266 to PixHawk6C}{34}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}MissionPlanner Configuration}{35}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}IR Markers}{35}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Mavproxy Telemetry}{35}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}GCS to Vicon }{35}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Your first flight}{36}{subsection.5.7}%
+\contentsline {section}{\numberline {6}Mission Planning}{36}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Missionplanner Geofence}{36}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}MissionPlanner Pathplanning}{36}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Byspoke customisation - Nura Efendic}{36}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Concluding Remark}{36}{section.7}%
