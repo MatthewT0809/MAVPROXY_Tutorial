@@ -1,0 +1,9 @@
+See main.pdf for the tutorial for how to use VICON positioning system with a Pixhawk6C. Useful for AVDC MSc students in Cranfield. 
+
+There are still many things I didn't dicuss on this guide... 
+If you are enthuesastic about not having others suffer from the same problem you faced, or believe the doucmentation could've been better,
+please fork this depositionary and request to pull! 
+
+The main.tex is a latex file that you can edit, bibliography is in the .bib file, and all images are located within the images folder.
+
+Please reach out to me to my email matthewchtam@gmail.com, I'd be more than happy to help (if I can)... 
