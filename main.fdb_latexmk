@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1778169538.25212 "main.aux" "main.bbl" "main" 1778169555.71773 0
+["bibtex main"] 1778244992.02334 "main.aux" "main.bbl" "main" 1778245012.70451 0
   "./bibliography.bib" 1778168622.89227 1484 068a2b657b9d9cbd210fd59f11b60c8d ""
   "/home/inspection/.miktex/texmfs/install/bibtex/bst/bibtex/unsrt.bst" 1778162824.11863 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1778169554.96144 29766 f38eb8ebdbf0ed5da2dac3eff8844ade "pdflatex"
+  "main.aux" 1778245011.80586 30262 7b7eebad7f0463e6dec5c6cd7282ca5e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778169538.48689 "/home/inspection/Documents/MAVPROXY_Tutorial/main.tex" "main.pdf" "main" 1778169555.71804 0
+["pdflatex"] 1778244992.29333 "/home/inspection/Documents/MAVPROXY_Tutorial/main.tex" "main.pdf" "main" 1778245012.70485 0
   "/home/inspection/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1778163089.69341 25876 e4754632c705ab5e1f4bdf2667004bf4 ""
   "/home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1778163098.96537 31952 f85cd231abe93ee0c79470435eb25a6d ""
   "/home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1778163103.05735 40136 23b62205443d231efa09df4661ca1c61 ""
@@ -279,7 +279,7 @@
   "/home/inspection/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1778162921.29419 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/home/inspection/.miktex/texmfs/install/tex/latex/xfrac/xfrac.sty" 1778162910.46224 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
   "/home/inspection/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1778163023.25372 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/inspection/Documents/MAVPROXY_Tutorial/main.tex" 1778169503.48586 53597 5ef2fc12e5b4daac97db22c1082e7a74 ""
+  "/home/inspection/Documents/MAVPROXY_Tutorial/main.tex" 1778244950.28235 53573 ed1980170690f75a408accfc3b738f54 ""
   "Images/11 Objects and selecting objects.png" 1778168622.69227 157739 8fbb8fadc9668b1d7ee4dfed360929d6 ""
   "Images/13 Alt click to track object.png" 1778168622.69627 380469 4cf18440f6793b1929e67dd5df1c4c5e ""
   "Images/16 Save your object.png" 1778168622.70027 185267 788a8cbaa8860c4ff4a5360679896f84 ""
@@ -290,6 +290,7 @@
   "Images/Big Camera calibrating.jpeg" 1778168622.71627 32431 8b04448ecb9fccd67091ee0fd04b2243 ""
   "Images/Big Camera light on.jpeg" 1778168622.72027 38005 44a54be33f85f54fb550eb9f43a88d7c ""
   "Images/Comms Arch.png" 1778168622.72427 682955 1c4e5ce9eaf0c205b6097cfc60434850 ""
+  "Images/DSC05445.JPG" 1778168622.74427 4181238 e012c4d8770fd2aeba431d2433470cdb ""
   "Images/Dance1.png" 1778168622.74427 288492 e53ab16657d57e24f495073fae342d67 ""
   "Images/Dance2.png" 1778168622.74427 308416 3cff53d48a1b752afe98affc20004fe3 ""
   "Images/Dance3.png" 1778168622.74427 312718 1dc32c2911fb06dee72644ee4feacd3f ""
@@ -370,11 +371,11 @@
   "Images/pyvicon1.png" 1778168622.88827 105099 6556c46145b072d2ed959dfe1b4a13cc ""
   "Images/pyvicon4.png" 1778168622.88827 238710 ed0a7f29cbbd239febd291b8b8f2ff0c ""
   "Images/setup9.png" 1778168622.89227 371255 a7c4a31f38c9fa42161c2432fb584020 ""
-  "main.aux" 1778169554.96144 29766 f38eb8ebdbf0ed5da2dac3eff8844ade "pdflatex"
-  "main.bbl" 1778169538.41757 898 cf6049f319540b5f867916850fade785 "bibtex main"
-  "main.out" 1778169554.96544 5890 6fbdc67e5cac9a2c46fed7019900eb31 "pdflatex"
-  "main.tex" 1778169503.48586 53597 5ef2fc12e5b4daac97db22c1082e7a74 ""
-  "main.toc" 1778169554.96544 3180 6db97740a2e1a39bddf5be4005d038d0 "pdflatex"
+  "main.aux" 1778245011.80586 30262 7b7eebad7f0463e6dec5c6cd7282ca5e "pdflatex"
+  "main.bbl" 1778244992.21002 898 cf6049f319540b5f867916850fade785 "bibtex main"
+  "main.out" 1778245011.80986 5890 6fbdc67e5cac9a2c46fed7019900eb31 "pdflatex"
+  "main.tex" 1778244950.28235 53573 ed1980170690f75a408accfc3b738f54 ""
+  "main.toc" 1778245011.80986 3180 6db97740a2e1a39bddf5be4005d038d0 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
