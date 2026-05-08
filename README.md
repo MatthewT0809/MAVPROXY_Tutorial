@@ -1,4 +1,6 @@
-## **✈️ ABOUT THIS DOCUMENT**
+## **✈️ ABOUT ME**
+
+[![PDF Preview](Images/meme0.png)](main.pdf)
 
 See `main.pdf` for the tutorial on how to use the VICON positioning system with a Pixhawk6C.  
 This document was originally aimed at AVDC MSc students at Cranfield for their GDP project,  
@@ -29,8 +31,9 @@ This document is written in **LaTeX**.
 ## **📞 CONTACT**
 
 Please **hesitate** 😂 to reach out to me at **Matthewchtam@gmail.com**.  
-My goal is to make Vicon so easy that nobody ever asks me about it again.  
-If you do ask, I will go cry in a hole.
+My goal is never have anyone asks about how to use Vicon ever again.
+
+If you do ask, that means I've failed, and I will go cry in a hole. 
 
 ---
 
