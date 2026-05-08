@@ -1,9 +1,18 @@
-See main.pdf for the tutorial for how to use VICON positioning system with a Pixhawk6C. Useful for AVDC MSc students in Cranfield. 
+[✈️ABOUT THIS DOCUMENT✈️]
+See main.pdf for the tutorial for how to use VICON positioning system with a Pixhawk6C. This paper is originally aim towards AVDC MSc students in Cranfield for their GDP project, but I will release this to ArduPilot forum as I have recieved feedback that it is useful.  
 
-There are still many things I didn't dicuss on this guide... 
-If you are enthuesastic about not having others suffer from the same problem you faced, or believe the doucmentation could've been better,
-please fork this depositionary and request to pull! 
+[⚠️DISCLAIMER⚠️]
+This document is concise so that you can get your drone to connect to Vicon. There exists many different ways to connect to Vicon (Writing your own SDK), but for your project, this should be more than okay! 
 
-The main.tex is a latex file that you can edit, bibliography is in the .bib file, and all images are located within the images folder.
 
-Please reach out to me to my email matthewchtam@gmail.com, I'd be more than happy to help (if I can)... 
+[✒️EDITING✒️]
+If there exists a certain part of the doucumentation/typo which you think could have been explained better, please fork this depositionary and request to push! 
+
+This document is written in LaTeX. The main.tex file is the one you can edit. Bibliography is in the "bibliography.bib" file. All images are located within the \Images folder.
+
+
+[📞CONTACT📞]
+Please **hesistate** 😂 to reach out to me @ Matthewchtam@gmail.com! Afterall, my goal is to never have anyone asking about how to use Vicon, ever again! If you asks me a question, that means I have failed, and I will go cry in a hole. 
+
+[⭐STAR⭐]
+If this is useful, please star this repositionary! 

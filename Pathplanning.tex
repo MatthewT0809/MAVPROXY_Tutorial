@@ -1,0 +1,505 @@
+\section{MAVLink-Based Position Control in Guided Mode}
+
+\subsection{Overview}
+
+MAVLink (Micro Air Vehicle Link) is a lightweight communication protocol used for interaction between a ground control system and an autopilot. In guided flight modes (e.g., \texttt{GUIDED} in ArduPilot), MAVLink enables external programs to command the vehicle’s motion in real time.
+
+A common approach for precise control, especially in indoor or GPS-denied environments, is to use \textbf{local position control} rather than global GPS coordinates. This is achieved using the \texttt{LOCAL\_NED} reference frame and corresponding MAVLink messages.
+
+\subsection{LOCAL\_NED Coordinate Frame}
+
+The \texttt{MAV\_FRAME\_LOCAL\_NED} frame is a Cartesian coordinate system defined as:
+
+\begin{itemize}
+    \item $x$ axis: North
+    \item $y$ axis: East
+    \item $z$ axis: Down
+\end{itemize}
+
+A key characteristic of this frame is that altitude is represented as a \textbf{negative value in the $z$ direction}. Therefore, commanding a position above the origin requires:
+
+\[
+z = -h
+\]
+
+where $h$ is the desired altitude above the reference point.
+
+The origin of the local frame is typically established at the vehicle’s position when the system initializes or arms.
+
+\subsection{Obtaining Local Position}
+
+The vehicle’s state in the local frame is provided by the MAVLink message:
+
+\begin{verbatim}
+LOCAL_POSITION_NED
+\end{verbatim}
+
+This message includes:
+\begin{itemize}
+    \item Position: $(x, y, z)$ in meters
+    \item Velocity: $(v_x, v_y, v_z)$ in m/s
+\end{itemize}
+
+This information is essential for:
+\begin{itemize}
+    \item Feedback control
+    \item Monitoring vehicle motion
+    \item Generating relative trajectories
+\end{itemize}
+
+\subsection{Flight Mode and Arming}
+
+Before sending position commands, the vehicle must be placed into a guided control mode:
+
+\begin{verbatim}
+set_mode("GUIDED")
+\end{verbatim}
+
+This enables the autopilot to accept external setpoint commands.
+
+\subsubsection{Arming}
+
+The motors are armed using the MAVLink command:
+
+\begin{verbatim}
+MAV_CMD_COMPONENT_ARM_DISARM
+\end{verbatim}
+
+This is typically sent using a \texttt{COMMAND\_LONG} message, with parameter 1 set to 1 (arm) or 0 (disarm). Confirmation is usually obtained via heartbeat messages.
+
+\subsection{Takeoff Procedure}
+
+Takeoff is commanded using:
+
+\begin{verbatim}
+MAV_CMD_NAV_TAKEOFF
+\end{verbatim}
+
+The desired altitude is provided as a parameter. The vehicle then ascends to this altitude under autopilot control. During this phase, altitude can be monitored using:
+
+\begin{verbatim}
+GLOBAL_POSITION_INT
+\end{verbatim}
+
+which provides relative altitude above the home position.
+
+\subsection{Position Control Using SET\_POSITION\_TARGET\_LOCAL\_NED}
+
+The primary MAVLink message for position control is:
+
+\begin{verbatim}
+SET_POSITION_TARGET_LOCAL_NED
+\end{verbatim}
+
+This message allows control over:
+\begin{itemize}
+    \item Position $(x, y, z)$
+    \item Velocity $(v_x, v_y, v_z)$
+    \item Acceleration $(a_x, a_y, a_z)$
+    \item Yaw and yaw rate
+\end{itemize}
+
+\subsubsection{Type Mask Logic}
+
+A \textbf{type mask} is used to specify which fields in the message should be ignored. Each bit in the mask corresponds to a specific field.
+
+For position-only control, the mask is configured to ignore velocity, acceleration, and yaw rate:
+
+\begin{verbatim}
+type_mask = (
+    VX_IGNORE | VY_IGNORE | VZ_IGNORE |
+    AX_IGNORE | AY_IGNORE | AZ_IGNORE |
+    YAW_RATE_IGNORE
+)
+\end{verbatim}
+
+If yaw is not controlled:
+
+\begin{verbatim}
+type_mask |= YAW_IGNORE
+\end{verbatim}
+
+\paragraph{Interpretation:}
+
+\begin{itemize}
+    \item Position is controlled directly
+    \item Velocity and acceleration are handled internally by the autopilot
+    \item Yaw can be either fixed or ignored
+\end{itemize}
+
+This simplifies control and leverages the autopilot’s internal controllers for smooth motion.
+
+\subsubsection{Sending Position Setpoints}
+
+The command is sent using:
+
+\begin{verbatim}
+set_position_target_local_ned_send(...)
+\end{verbatim}
+
+with:
+\begin{itemize}
+    \item Desired position $(x, y, z)$
+    \item Type mask defining active fields
+    \item Optional yaw angle
+\end{itemize}
+
+\subsection{Continuous Setpoint Streaming}
+
+In guided mode, position commands must be sent at a fixed rate (typically 5–20 Hz). This is necessary because:
+
+\begin{itemize}
+    \item The autopilot expects continuous updates
+    \item A lack of commands may cause the vehicle to hold position or trigger failsafe behavior
+\end{itemize}
+
+Thus, even when holding a fixed position, the same setpoint is repeatedly transmitted.
+
+\subsection{Landing Procedure}
+
+Landing is typically performed by switching to an autonomous landing mode:
+
+\begin{verbatim}
+set_mode("LAND")
+\end{verbatim}
+
+In this mode, the autopilot handles descent, velocity control, and motor shutdown.
+
+\subsection{Code Examples and Practical Execution}
+
+This subsection shows a minimal workflow for issuing MAVLink position commands from Python using \texttt{pymavlink}. 
+
+\subsubsection{Connecting to the MAVLink stream}
+
+A MAVLink client first needs to connect to a UDP endpoint:
+
+\begin{verbatim}
+from pymavlink import mavutil
+
+master = mavutil.mavlink_connection('udpin:127.0.0.1:14551')
+master.wait_heartbeat()
+
+print("Connected")
+print(f"Heartbeat from system {master.target_system} "
+      f"component {master.target_component}")
+\end{verbatim}
+
+The call to \texttt{wait\_heartbeat()} is important because it confirms that communication with the autopilot has been established and also provides the target system and component identifiers used in later commands.
+
+\subsubsection{Flight mode, arming, and takeoff}
+
+Before sending local position instructions, the vehicle must be placed in a guided mode, armed, and lifted to a safe altitude. The following example reflects the same sequence.
+
+\begin{verbatim}
+def set_mode(master, mode_name):
+    mode_map = master.mode_mapping()
+    if mode_map is None or mode_name not in mode_map:
+        raise RuntimeError(f"Mode {mode_name} not available")
+
+    mode_id = mode_map[mode_name]
+    master.mav.set_mode_send(
+        master.target_system,
+        mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,
+        mode_id
+    )
+
+def arm_vehicle(master):
+    master.mav.command_long_send(
+        master.target_system,
+        master.target_component,
+        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,
+        0,
+        1, 0, 0, 0, 0, 0, 0
+    )
+
+def takeoff(master, target_alt_m):
+    master.mav.command_long_send(
+        master.target_system,
+        master.target_component,
+        mavutil.mavlink.MAV_CMD_NAV_TAKEOFF,
+        0,
+        0, 0, 0, 0,
+        0, 0,
+        target_alt_m
+    )
+\end{verbatim}
+
+A typical usage sequence is then:
+
+\begin{verbatim}
+set_mode(master, "GUIDED")
+arm_vehicle(master)
+takeoff(master, 1.5)
+\end{verbatim}
+
+The takeoff altitude is then checked using \texttt{GLOBAL\_POSITION\_INT}, and the code waits until the vehicle reaches approximately \(95\%\) of the requested height before continuing. 
+
+\subsubsection{Reading the current local position}
+
+After takeoff, the local position can be obtained from \texttt{LOCAL\_POSITION\_NED}:
+
+\begin{verbatim}
+def get_current_local_position(master, timeout=5):
+    import time
+    deadline = time.time() + timeout
+
+    while time.time() < deadline:
+        msg = master.recv_match(
+            type=['LOCAL_POSITION_NED', 'STATUSTEXT'],
+            blocking=True,
+            timeout=1
+        )
+
+        if not msg:
+            continue
+
+        if msg.get_type() == 'STATUSTEXT':
+            print("STATUSTEXT:", msg.text)
+            continue
+
+        return msg.x, msg.y, msg.z
+
+    raise RuntimeError("No LOCAL_POSITION_NED received")
+\end{verbatim}
+
+This is useful for reading the vehicle state, defining a home position, or generating waypoints relative to the current pose. 
+
+\subsubsection{Sending a local position instruction}
+
+A local position instruction is sent using \texttt{SET\_POSITION\_TARGET\_LOCAL\_NED}. The mask ignores velocity, acceleration, and yaw rate, meaning that only position and, optionally, yaw are commanded.
+
+\begin{verbatim}
+def send_local_position(master, x_m, y_m, z_down_m, yaw_rad=None):
+    type_mask = (
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_VX_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_VY_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_VZ_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_AX_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_AY_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_AZ_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_YAW_RATE_IGNORE
+    )
+
+    if yaw_rad is None:
+        type_mask |= mavutil.mavlink.POSITION_TARGET_TYPEMASK_YAW_IGNORE
+        yaw_rad = 0.0
+
+    master.mav.set_position_target_local_ned_send(
+        0,
+        master.target_system,
+        master.target_component,
+        mavutil.mavlink.MAV_FRAME_LOCAL_NED,
+        type_mask,
+        x_m, y_m, z_down_m,
+        0, 0, 0,
+        0, 0, 0,
+        yaw_rad,
+        0
+    )
+\end{verbatim}
+
+Since the frame is \texttt{LOCAL\_NED}, a positive altitude above the vehicle origin must be sent as a negative down value. For example, flying at \(1.5\) m above the local origin means sending:
+
+\[
+z_{\text{down}} = -1.5
+\]
+
+This sign conversion is also used directly in the supplied code through:
+\begin{verbatim}
+z_down = -z_up_m
+\end{verbatim}
+
+\subsubsection{Holding position by repeatedly sending the same command}
+
+In guided mode, a single setpoint is usually not enough. The autopilot expects repeated updates, so the scripts send the same local position command at a fixed rate. In the provided code, this is done using a helper function that transmits setpoints at a configurable frequency, typically \(10\) Hz.
+
+\begin{verbatim}
+def hold_position(master, x_m, y_m, z_up_m, yaw_rad, duration_s, rate_hz=10.0):
+    import time
+    dt = 1.0 / rate_hz
+    z_down = -z_up_m
+    n = max(1, int(duration_s * rate_hz))
+
+    for _ in range(n):
+        send_local_position(master, x_m, y_m, z_down, yaw_rad)
+        time.sleep(dt)
+\end{verbatim}
+
+A simple usage example is:
+
+\begin{verbatim}
+hold_position(master, x_m=1.0, y_m=0.5, z_up_m=1.5,
+              yaw_rad=None, duration_s=5.0, rate_hz=10.0)
+\end{verbatim}
+
+This commands the vehicle to hold the point \((1.0, 0.5, -1.5)\) in \texttt{LOCAL\_NED} for five seconds.
+
+\subsubsection{Landing}
+
+Landing can be triggered by changing the flight mode:
+
+\begin{verbatim}
+set_mode(master, "LAND")
+\end{verbatim}
+
+\subsubsection{Minimal runnable example}
+
+The following compact example combines the essential steps into one script:
+
+\begin{verbatim}
+from pymavlink import mavutil
+import time
+
+master = mavutil.mavlink_connection('udpin:127.0.0.1:14551')
+master.wait_heartbeat()
+
+def set_mode(mode_name):
+    mode_map = master.mode_mapping()
+    mode_id = mode_map[mode_name]
+    master.mav.set_mode_send(
+        master.target_system,
+        mavutil.mavlink.MAV_MODE_FLAG_CUSTOM_MODE_ENABLED,
+        mode_id
+    )
+
+def arm():
+    master.mav.command_long_send(
+        master.target_system,
+        master.target_component,
+        mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,
+        0, 1, 0, 0, 0, 0, 0, 0
+    )
+
+def takeoff(alt):
+    master.mav.command_long_send(
+        master.target_system,
+        master.target_component,
+        mavutil.mavlink.MAV_CMD_NAV_TAKEOFF,
+        0, 0, 0, 0, 0, 0, 0, alt
+    )
+
+def send_local_position(x, y, z_down, yaw=None):
+    type_mask = (
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_VX_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_VY_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_VZ_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_AX_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_AY_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_AZ_IGNORE |
+        mavutil.mavlink.POSITION_TARGET_TYPEMASK_YAW_RATE_IGNORE
+    )
+
+    if yaw is None:
+        type_mask |= mavutil.mavlink.POSITION_TARGET_TYPEMASK_YAW_IGNORE
+        yaw = 0.0
+
+    master.mav.set_position_target_local_ned_send(
+        0,
+        master.target_system,
+        master.target_component,
+        mavutil.mavlink.MAV_FRAME_LOCAL_NED,
+        type_mask,
+        x, y, z_down,
+        0, 0, 0,
+        0, 0, 0,
+        yaw,
+        0
+    )
+
+set_mode("GUIDED")
+time.sleep(2)
+arm()
+time.sleep(2)
+takeoff(1.5)
+time.sleep(8)
+
+for _ in range(50):
+    send_local_position(1.0, 0.0, -1.5, None)
+    time.sleep(0.1)
+
+set_mode("LAND")
+\end{verbatim}
+
+
+\subsubsection{Communication Logic and Port Usage}
+
+In this setup, MAVLink communication is handled through two UDP endpoints with different roles.
+
+The first endpoint is used by MAVProxy:
+\begin{verbatim}
+mavproxy.py --master :14550 --console --map
+\end{verbatim}
+
+Here, port \texttt{14550} is the main MAVLink input seen by MAVProxy. In other words, MAVProxy receives the telemetry stream arriving from the flight controller through the ESP-based Wi-Fi link on this port.
+
+The Python control script does not connect directly to this same endpoint. Instead, it opens a second MAVLink connection:
+
+\begin{verbatim}
+udpin:127.0.0.1:14551
+\end{verbatim}
+
+This means the script listens locally on port \texttt{14551} for a MAVLink stream that is made available on the PC. In practice, MAVProxy acts as middleware: it receives the original telemetry stream and exposes a second local endpoint that the Python script can use.
+
+Therefore, the port roles can be summarized as:
+
+\begin{itemize}
+    \item \texttt{14550}: MAVProxy master/input port
+    \item \texttt{14551}: local MAVLink endpoint used by the Python script
+\end{itemize}
+
+This is why two different port numbers appear in the workflow. They are not arbitrary duplicates, but separate stages in the communication chain.
+
+The full logic is:
+
+\begin{enumerate}
+    \item The flight controller is connected to the ESP module.
+    \item The ESP module creates a Wi-Fi hotspot.
+    \item The ground station computer connects to this hotspot.
+    \item Telemetry arrives to MAVProxy on port \texttt{14550}.
+    \item MAVProxy exposes a local MAVLink stream on port \texttt{14551}.
+    \item The Python script connects to port \texttt{14551}, receives telemetry, and sends control commands through that connection.
+\end{enumerate}
+
+This arrangement is useful because MAVProxy can serve as an intermediate communication layer, while the Python code remains focused on vehicle control logic.
+\subsubsection{Running the Code}
+
+Before running the Python control script, the following conditions should be satisfied:
+
+\begin{enumerate}
+    \item The flight controller must be powered and connected to the ESP module.
+    \item The ESP module must be active and broadcasting its Wi-Fi hotspot.
+    \item The computer running the script must be connected to that Wi-Fi network.
+    \item MAVLink telemetry must be available on the expected UDP port.
+    \item The autopilot must support the selected guided control mode.
+\end{enumerate}
+
+Once the wireless telemetry link is available, the script can be started normally from the terminal. A minimal example is:
+
+\begin{verbatim}
+python3 your_script.py
+\end{verbatim}
+
+\subsection{General Remarks}
+
+Using \texttt{LOCAL\_NED} control provides several advantages:
+
+\begin{itemize}
+    \item High precision in indoor or GPS-denied environments
+    \item Simple trajectory definition in Cartesian space
+    \item Compatibility with external localization systems (e.g., motion capture or SLAM)
+\end{itemize}
+
+However, care must be taken with:
+\begin{itemize}
+    \item Sign conventions (especially for the $z$ axis)
+    \item Consistent reference frame definition
+    \item Maintaining continuous command streaming
+\end{itemize}
+
+\subsection{Further Reading}
+
+A detailed description of MAVLink commands in guided mode can be found in the official ArduPilot documentation:
+
+\begin{center}
+\texttt{https://ardupilot.org/dev/docs/copter-commands-in-guided-mode.html}
+\end{center}
