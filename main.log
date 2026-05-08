@@ -1408,4 +1408,112 @@ Package pdftex.def Info: Images/Big Camera light on.jpeg  used on input line 387
 File: Images/Big Camera calibrating.jpeg Graphic file (type jpg)
 <use Images/Big Camera calibrating.jpeg>
 Package pdftex.def Info: Images/Big Camera calibrating.jpeg  used on input line 392.
-(pdftex.def)             Requested size: 108.6306pt x 1
+(pdftex.def)             Requested size: 108.6306pt x 139.43434pt.
+<Images/Small Camera calibrating.jpeg, id=318, 252.19218pt x 323.70938pt>
+File: Images/Small Camera calibrating.jpeg Graphic file (type jpg)
+<use Images/Small Camera calibrating.jpeg>
+Package pdftex.def Info: Images/Small Camera calibrating.jpeg  used on input line 397.
+(pdftex.def)             Requested size: 108.6306pt x 139.43434pt.
+<Images/Big Camera Calibrated.jpeg, id=319, 252.19218pt x 323.70938pt>
+File: Images/Big Camera Calibrated.jpeg Graphic file (type jpg)
+<use Images/Big Camera Calibrated.jpeg>
+Package pdftex.def Info: Images/Big Camera Calibrated.jpeg  used on input line 404.
+(pdftex.def)             Requested size: 108.6306pt x 139.43434pt.
+<Images/Small Camera Calibrated.jpeg, id=320, 252.19218pt x 323.70938pt>
+File: Images/Small Camera Calibrated.jpeg Graphic file (type jpg)
+<use Images/Small Camera Calibrated.jpeg>
+Package pdftex.def Info: Images/Small Camera Calibrated.jpeg  used on input line 409.
+(pdftex.def)             Requested size: 108.6306pt x 139.43434pt.
+ [11 <./Images/Dance1.png> <./Images/Dance2.png> <./Images/Dance3.png> <./Images/Dance4.png> <./Images/Dance5.png> <./Images/Dance6.png> <./Images/Dance7.png> <./Images/Dance8.png> <./Images/Small Camera light on.jpeg> <./Images/Big Camera light on.jpeg> <./Images/Big Camera calibrating.jpeg> <./Images/Small Camera calibrating.jpeg> <./Images/Big Camera Calibrated.jpeg> <./Images/Small Camera Calibrated.jpeg>]
+<Images/8.75 Calibrating Camera.png, id=336, 1445.4pt x 903.375pt>
+File: Images/8.75 Calibrating Camera.png Graphic file (type png)
+<use Images/8.75 Calibrating Camera.png>
+Package pdftex.def Info: Images/8.75 Calibrating Camera.png  used on input line 420.
+(pdftex.def)             Requested size: 472.31577pt x 295.19238pt.
+<Images/Bad vs good camera calibration.png, id=338, 298.11375pt x 189.20688pt>
+File: Images/Bad vs good camera calibration.png Graphic file (type png)
+<use Images/Bad vs good camera calibration.png>
+Package pdftex.def Info: Images/Bad vs good camera calibration.png  used on input line 429.
+(pdftex.def)             Requested size: 377.85405pt x 239.83101pt.
+ [12
+
+ <./Images/8.75 Calibrating Camera.png> <./Images/Bad vs good camera calibration.png>]
+<Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg, id=349, 722.7pt x 1606.0pt>
+File: Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg Graphic file (type jpg)
+<use Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg>
+Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg  used on input line 442.
+(pdftex.def)             Requested size: 151.1445pt x 335.87314pt.
+<Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg, id=350, 361.35pt x 803.0pt>
+File: Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg Graphic file (type jpg)
+<use Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg>
+Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg  used on input line 449.
+(pdftex.def)             Requested size: 151.1445pt x 335.87314pt.
+<Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg, id=351, 722.7pt x 1606.0pt>
+File: Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg Graphic file (type jpg)
+<use Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg>
+Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg  used on input line 456.
+(pdftex.def)             Requested size: 151.1445pt x 335.87314pt.
+<Images/Direction convention of Vicon Calibration Wand.png, id=353, 361.85187pt x 803.0pt>
+File: Images/Direction convention of Vicon Calibration Wand.png Graphic file (type png)
+<use Images/Direction convention of Vicon Calibration Wand.png>
+Package pdftex.def Info: Images/Direction convention of Vicon Calibration Wand.png  used on input line 469.
+(pdftex.def)             Requested size: 236.15788pt x 524.0758pt.
+ [13 <./Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg> <./Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg> <./Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg>]
+<Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg, id=361, 1929.2075pt x 1204.5pt>
+File: Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg Graphic file (type jpg)
+<use Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg>
+Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg  used on input line 476.
+(pdftex.def)             Requested size: 472.31577pt x 294.87534pt.
+ [14 <./Images/Direction convention of Vicon Calibration Wand.png>]
+<Images/DSC05445.JPG, id=370, 1238.91429pt x 697.09576pt>
+File: Images/DSC05445.JPG Graphic file (type jpg)
+<use Images/DSC05445.JPG>
+Package pdftex.def Info: Images/DSC05445.JPG  used on input line 488.
+(pdftex.def)             Requested size: 377.85405pt x 212.59793pt.
+<Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg, id=371, 1606.0pt x 723.70375pt>
+File: Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg Graphic file (type jpg)
+<use Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg>
+Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg  used on input line 496.
+(pdftex.def)             Requested size: 472.31577pt x 212.83922pt.
+ [15 <./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg> <./Images/DSC05445.JPG>]
+<Images/11 Objects and selecting objects.png, id=378, 1445.4pt x 903.375pt>
+File: Images/11 Objects and selecting objects.png Graphic file (type png)
+<use Images/11 Objects and selecting objects.png>
+Package pdftex.def Info: Images/11 Objects and selecting objects.png  used on input line 505.
+(pdftex.def)             Requested size: 472.31577pt x 295.19238pt.
+<Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg, id=380, 1927.2pt x 1204.5pt>
+File: Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg Graphic file (type jpg)
+<use Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg>
+Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg  used on input line 514.
+(pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
+ [16 <./Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg> <./Images/11 Objects and selecting objects.png>]
+<Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg, id=390, 1927.2pt x 1204.5pt>
+File: Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg Graphic file (type jpg)
+<use Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg>
+Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg  used on input line 521.
+(pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
+<Images/13 Alt click to track object.png, id=392, 1445.4pt x 903.375pt>
+File: Images/13 Alt click to track object.png Graphic file (type png)
+<use Images/13 Alt click to track object.png>
+Package pdftex.def Info: Images/13 Alt click to track object.png  used on input line 529.
+(pdftex.def)             Requested size: 472.31577pt x 295.19238pt.
+ [17 <./Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg> <./Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg>]
+<Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg, id=400, 963.6pt x 602.25pt>
+File: Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg Graphic file (type jpg)
+<use Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg>
+Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg  used on input line 538.
+(pdftex.def)             Requested size: 472.31577pt x 295.19698pt.
+<Images/17 Shared saving.png, id=401, 1445.4pt x 903.375pt>
+File: Images/17 Shared saving.png Graphic file (type png)
+<use Images/17 Shared saving.png>
+Package pdftex.def Info: Images/17 Shared saving.png  used on input line 544.
+(pdftex.def)             Requested size: 472.31577pt x 295.19238pt.
+ [18 <./Images/13 Alt click to track object.png>]
+<Images/16 Save your object.png, id=412, 1445.4pt x 903.375pt>
+File: Images/16 Save your object.png Graphic file (type png)
+<use Images/16 Save your object.png>
+Package pdftex.def Info: Images/16 Save your object.png  used on input line 551.
+(pdftex.def)             Requested size: 472.31577pt x 295.19238pt.
+ [19 <./Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg> <./Images/17 Shared saving.png>] [20 <./Images/16 Save your object.png>]
+<Images/Hardware Requirements.png, id=428, 559.08875pt x 142.03062pt>
+File: Image
