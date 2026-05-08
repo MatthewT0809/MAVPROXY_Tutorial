@@ -1,4 +1,3 @@
-# ✈️ Vicon Positioning Guide for Pixhawk6C
 
 ## 📄 Full PDF Guide
 <embed src="main.pdf" width="100%" height="900px" />
