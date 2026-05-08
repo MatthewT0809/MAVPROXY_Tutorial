@@ -1,18 +1,39 @@
-[✈️ABOUT THIS DOCUMENT✈️]
-See main.pdf for the tutorial for how to use VICON positioning system with a Pixhawk6C. This paper is originally aim towards AVDC MSc students in Cranfield for their GDP project, but I will release this to ArduPilot forum as I have recieved feedback that it is useful.  
+## **✈️ ABOUT THIS DOCUMENT**
 
-[⚠️DISCLAIMER⚠️]
-This document is concise so that you can get your drone to connect to Vicon. There exists many different ways to connect to Vicon (Writing your own SDK), but for your project, this should be more than okay! 
+See `main.pdf` for the tutorial on how to use the VICON positioning system with a Pixhawk6C.  
+This document was originally aimed at AVDC MSc students at Cranfield for their GDP project,  
+but I will also release it to the ArduPilot forum after receiving feedback that it is useful.
 
+---
 
-[✒️EDITING✒️]
-If there exists a certain part of the doucumentation/typo which you think could have been explained better, please fork this depositionary and request to push! 
+## **⚠️ DISCLAIMER**
 
-This document is written in LaTeX. The main.tex file is the one you can edit. Bibliography is in the "bibliography.bib" file. All images are located within the \Images folder.
+This document is intentionally concise so you can get your drone connected to Vicon quickly.  
+There are many ways to interface with Vicon (including writing your own SDK), but for your  
+project this method is more than sufficient.
 
+---
 
-[📞CONTACT📞]
-Please **hesistate** 😂 to reach out to me @ Matthewchtam@gmail.com! Afterall, my goal is to never have anyone asking about how to use Vicon, ever again! If you asks me a question, that means I have failed, and I will go cry in a hole. 
+## **✒️ EDITING**
 
-[⭐STAR⭐]
-If this is useful, please star this repositionary! 
+If you find a typo or a section that could be explained better, please fork this repository  
+and submit a pull request.
+
+This document is written in **LaTeX**.  
+- Edit the main file: `main.tex`  
+- Bibliography: `bibliography.bib`  
+- Images: `Images/` folder
+
+---
+
+## **📞 CONTACT**
+
+Please **hesitate** 😂 to reach out to me at **Matthewchtam@gmail.com**.  
+My goal is to make Vicon so easy that nobody ever asks me about it again.  
+If you do ask, I will go cry in a hole.
+
+---
+
+## **⭐ STAR THIS REPOSITORY**
+
+If this was useful, please consider starring the repository!
