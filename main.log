@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.16)  21 APR 2026 23:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.16)  8 MAY 2026 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1115,9 +1115,6 @@ LaTeX Warning: Label `fig:placeholder' multiply defined.
 LaTeX Warning: Label `fig:placeholder2' multiply defined.
 
 
-LaTeX Warning: Label `fig:irmarkers' multiply defined.
-
-
 LaTeX Warning: Label `fig:NC2' multiply defined.
 
 )
@@ -1468,57 +1465,55 @@ File: Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg Graphic file (type j
 Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg  used on input line 476.
 (pdftex.def)             Requested size: 472.31577pt x 294.87534pt.
  [14 <./Images/Direction convention of Vicon Calibration Wand.png>]
-<Images/DSC05445.JPG, id=370, 1238.91429pt x 697.09576pt>
-File: Images/DSC05445.JPG Graphic file (type jpg)
-<use Images/DSC05445.JPG>
-Package pdftex.def Info: Images/DSC05445.JPG  used on input line 488.
-(pdftex.def)             Requested size: 377.85405pt x 212.59793pt.
-<Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg, id=371, 1606.0pt x 723.70375pt>
+
+LaTeX Warning: Reference `fig:18' on page 15 undefined on input line 484.
+
+<Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg, id=369, 1606.0pt x 723.70375pt>
 File: Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg Graphic file (type jpg)
 <use Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg>
 Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg  used on input line 496.
 (pdftex.def)             Requested size: 472.31577pt x 212.83922pt.
- [15 <./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg> <./Images/DSC05445.JPG>]
-<Images/11 Objects and selecting objects.png, id=378, 1445.4pt x 903.375pt>
+[15 <./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg>]
+<Images/11 Objects and selecting objects.png, id=375, 1445.4pt x 903.375pt>
 File: Images/11 Objects and selecting objects.png Graphic file (type png)
 <use Images/11 Objects and selecting objects.png>
 Package pdftex.def Info: Images/11 Objects and selecting objects.png  used on input line 505.
 (pdftex.def)             Requested size: 472.31577pt x 295.19238pt.
-<Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg, id=380, 1927.2pt x 1204.5pt>
+<Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg, id=377, 1927.2pt x 1204.5pt>
 File: Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg Graphic file (type jpg)
 <use Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg>
 Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg  used on input line 514.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
  [16 <./Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg> <./Images/11 Objects and selecting objects.png>]
-<Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg, id=390, 1927.2pt x 1204.5pt>
+<Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg, id=387, 1927.2pt x 1204.5pt>
 File: Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg Graphic file (type jpg)
 <use Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg>
 Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg  used on input line 521.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
-<Images/13 Alt click to track object.png, id=392, 1445.4pt x 903.375pt>
+<Images/13 Alt click to track object.png, id=389, 1445.4pt x 903.375pt>
 File: Images/13 Alt click to track object.png Graphic file (type png)
 <use Images/13 Alt click to track object.png>
 Package pdftex.def Info: Images/13 Alt click to track object.png  used on input line 529.
 (pdftex.def)             Requested size: 472.31577pt x 295.19238pt.
  [17 <./Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg> <./Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg>]
-<Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg, id=400, 963.6pt x 602.25pt>
+<Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg, id=397, 963.6pt x 602.25pt>
 File: Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg Graphic file (type jpg)
 <use Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg>
 Package pdftex.def Info: Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg  used on input line 538.
 (pdftex.def)             Requested size: 472.31577pt x 295.19698pt.
-<Images/17 Shared saving.png, id=401, 1445.4pt x 903.375pt>
+<Images/17 Shared saving.png, id=398, 1445.4pt x 903.375pt>
 File: Images/17 Shared saving.png Graphic file (type png)
 <use Images/17 Shared saving.png>
 Package pdftex.def Info: Images/17 Shared saving.png  used on input line 544.
 (pdftex.def)             Requested size: 472.31577pt x 295.19238pt.
  [18 <./Images/13 Alt click to track object.png>]
-<Images/16 Save your object.png, id=412, 1445.4pt x 903.375pt>
+<Images/16 Save your object.png, id=409, 1445.4pt x 903.375pt>
 File: Images/16 Save your object.png Graphic file (type png)
 <use Images/16 Save your object.png>
 Package pdftex.def Info: Images/16 Save your object.png  used on input line 551.
 (pdftex.def)             Requested size: 472.31577pt x 295.19238pt.
  [19 <./Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg> <./Images/17 Shared saving.png>] [20 <./Images/16 Save your object.png>]
-<Images/Hardware Requirements.png, id=428, 559.08875pt x 142.03062pt>
+<Images/Hardware Requirements.png, id=425, 559.08875pt x 142.03062pt>
 File: Images/Hardware Requirements.png Graphic file (type png)
 <use Images/Hardware Requirements.png>
 Package pdftex.def Info: Images/Hardware Requirements.png  used on input line 569.
@@ -1526,17 +1521,17 @@ Package pdftex.def Info: Images/Hardware Requirements.png  used on input line 56
  [21
 
  <./Images/Hardware Requirements.png>]
-<Images/SDK1.png, id=438, 1927.2pt x 1204.5pt>
+<Images/SDK1.png, id=435, 1927.2pt x 1204.5pt>
 File: Images/SDK1.png Graphic file (type png)
 <use Images/SDK1.png>
 Package pdftex.def Info: Images/SDK1.png  used on input line 589.
 (pdftex.def)             Requested size: 425.0813pt x 265.67085pt.
-<Images/SDK2.png, id=440, 1927.2pt x 1204.5pt>
+<Images/SDK2.png, id=437, 1927.2pt x 1204.5pt>
 File: Images/SDK2.png Graphic file (type png)
 <use Images/SDK2.png>
 Package pdftex.def Info: Images/SDK2.png  used on input line 596.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
-<Images/SDK3E.png, id=442, 1445.4pt x 903.375pt>
+<Images/SDK3E.png, id=439, 1445.4pt x 903.375pt>
 File: Images/SDK3E.png Graphic file (type png)
 <use Images/SDK3E.png>
 Package pdftex.def Info: Images/SDK3E.png  used on input line 603.
@@ -1544,51 +1539,51 @@ Package pdftex.def Info: Images/SDK3E.png  used on input line 603.
  [22
 
  <./Images/SDK1.png> <./Images/SDK2.png>]
-<Images/SDK4.png, id=452, 1927.2pt x 1204.5pt>
+<Images/SDK4.png, id=449, 1927.2pt x 1204.5pt>
 File: Images/SDK4.png Graphic file (type png)
 <use Images/SDK4.png>
 Package pdftex.def Info: Images/SDK4.png  used on input line 610.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
-<Images/SDK59.png, id=454, 846.66313pt x 525.965pt>
+<Images/SDK59.png, id=451, 846.66313pt x 525.965pt>
 File: Images/SDK59.png Graphic file (type png)
 <use Images/SDK59.png>
 Package pdftex.def Info: Images/SDK59.png  used on input line 617.
 (pdftex.def)             Requested size: 425.0813pt x 264.06529pt.
  [23 <./Images/SDK3E.png> <./Images/SDK4.png>]
-<Images/SDK9.png, id=464, 1927.2pt x 1204.5pt>
+<Images/SDK9.png, id=461, 1927.2pt x 1204.5pt>
 File: Images/SDK9.png Graphic file (type png)
 <use Images/SDK9.png>
 Package pdftex.def Info: Images/SDK9.png  used on input line 624.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
-<Images/SDK10.png, id=466, 1927.2pt x 1204.5pt>
+<Images/SDK10.png, id=463, 1927.2pt x 1204.5pt>
 File: Images/SDK10.png Graphic file (type png)
 <use Images/SDK10.png>
 Package pdftex.def Info: Images/SDK10.png  used on input line 631.
 (pdftex.def)             Requested size: 425.0813pt x 265.67085pt.
  [24 <./Images/SDK59.png> <./Images/SDK9.png>]
-<Images/SDK11.png, id=477, 1927.2pt x 1204.5pt>
+<Images/SDK11.png, id=474, 1927.2pt x 1204.5pt>
 File: Images/SDK11.png Graphic file (type png)
 <use Images/SDK11.png>
 Package pdftex.def Info: Images/SDK11.png  used on input line 638.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
-<Images/SDK14.png, id=479, 1927.2pt x 1204.5pt>
+<Images/SDK14.png, id=476, 1927.2pt x 1204.5pt>
 File: Images/SDK14.png Graphic file (type png)
 <use Images/SDK14.png>
 Package pdftex.def Info: Images/SDK14.png  used on input line 645.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
  [25 <./Images/SDK10.png> <./Images/SDK11.png>]
-<Images/SDK15.png, id=489, 1927.2pt x 1204.5pt>
+<Images/SDK15.png, id=486, 1927.2pt x 1204.5pt>
 File: Images/SDK15.png Graphic file (type png)
 <use Images/SDK15.png>
 Package pdftex.def Info: Images/SDK15.png  used on input line 652.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
-<Images/SDK155.png, id=493, 1284.29813pt x 611.78563pt>
+<Images/SDK155.png, id=490, 1284.29813pt x 611.78563pt>
 File: Images/SDK155.png Graphic file (type png)
 <use Images/SDK155.png>
 Package pdftex.def Info: Images/SDK155.png  used on input line 662.
 (pdftex.def)             Requested size: 472.31577pt x 224.98488pt.
  [26 <./Images/SDK14.png> <./Images/SDK15.png>]
-<Images/pyvicon1.png, id=503, 1927.2pt x 1204.5pt>
+<Images/pyvicon1.png, id=500, 1927.2pt x 1204.5pt>
 File: Images/pyvicon1.png Graphic file (type png)
 <use Images/pyvicon1.png>
 Package pdftex.def Info: Images/pyvicon1.png  used on input line 669.
@@ -1598,127 +1593,123 @@ Package pdftex.def Info: Images/pyvicon1.png  used on input line 669.
 LaTeX Warning: Reference `fig:SDK16' on page 27 undefined on input line 674.
 
 [27 <./Images/SDK155.png> <./Images/pyvicon1.png>]
-<Images/SDK195.png, id=514, 961.09062pt x 504.88625pt>
+<Images/SDK195.png, id=511, 961.09062pt x 504.88625pt>
 File: Images/SDK195.png Graphic file (type png)
 <use Images/SDK195.png>
 Package pdftex.def Info: Images/SDK195.png  used on input line 689.
 (pdftex.def)             Requested size: 472.31577pt x 248.12059pt.
-<Images/pyvicon4.png, id=516, 1927.2pt x 1204.5pt>
+<Images/pyvicon4.png, id=513, 1927.2pt x 1204.5pt>
 File: Images/pyvicon4.png Graphic file (type png)
 <use Images/pyvicon4.png>
 Package pdftex.def Info: Images/pyvicon4.png  used on input line 707.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
  [28 <./Images/SDK195.png>]
-<Images/setup9.png, id=537, 1927.2pt x 1204.5pt>
+<Images/setup9.png, id=534, 1927.2pt x 1204.5pt>
 File: Images/setup9.png Graphic file (type png)
 <use Images/setup9.png>
 Package pdftex.def Info: Images/setup9.png  used on input line 725.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
  [29 <./Images/pyvicon4.png>]
-<Images/Hardware photo.png, id=554, 688.5725pt x 385.44pt>
+<Images/Hardware photo.png, id=551, 688.5725pt x 385.44pt>
 File: Images/Hardware photo.png Graphic file (type png)
 <use Images/Hardware photo.png>
 Package pdftex.def Info: Images/Hardware photo.png  used on input line 733.
 (pdftex.def)             Requested size: 472.31577pt x 264.38945pt.
  [30 <./Images/setup9.png> <./Images/Hardware photo.png>]
-<Images/network1.png, id=566, 550.30594pt x 354.57469pt>
+<Images/network1.png, id=563, 550.30594pt x 354.57469pt>
 File: Images/network1.png Graphic file (type png)
 <use Images/network1.png>
 Package pdftex.def Info: Images/network1.png  used on input line 745.
 (pdftex.def)             Requested size: 377.85405pt x 243.4665pt.
-<Images/network2.png, id=568, 551.81157pt x 363.60844pt>
+<Images/network2.png, id=565, 551.81157pt x 363.60844pt>
 File: Images/network2.png Graphic file (type png)
 <use Images/network2.png>
 Package pdftex.def Info: Images/network2.png  used on input line 752.
 (pdftex.def)             Requested size: 377.85405pt x 248.9926pt.
-<Images/network3.png, id=570, 551.05875pt x 367.3725pt>
+<Images/network3.png, id=567, 551.05875pt x 367.3725pt>
 File: Images/network3.png Graphic file (type png)
 <use Images/network3.png>
 Package pdftex.def Info: Images/network3.png  used on input line 759.
 (pdftex.def)             Requested size: 377.85405pt x 251.9121pt.
  [31 <./Images/network1.png> <./Images/network2.png>]
-<Images/network5.png, id=583, 611.28375pt x 253.69781pt>
+<Images/network5.png, id=580, 611.28375pt x 253.69781pt>
 File: Images/network5.png Graphic file (type png)
 <use Images/network5.png>
 Package pdftex.def Info: Images/network5.png  used on input line 770.
 (pdftex.def)             Requested size: 377.85405pt x 156.81874pt.
-<Images/mavproxy11.png, id=585, 1330.9725pt x 464.4853pt>
+<Images/mavproxy11.png, id=582, 1330.9725pt x 464.4853pt>
 File: Images/mavproxy11.png Graphic file (type png)
 <use Images/mavproxy11.png>
 Package pdftex.def Info: Images/mavproxy11.png  used on input line 782.
 (pdftex.def)             Requested size: 472.31577pt x 164.82611pt.
  [32 <./Images/network3.png> <./Images/network5.png>]
-<Images/mavproxy2.png, id=601, 1927.2pt x 1204.5pt>
+<Images/mavproxy2.png, id=598, 1927.2pt x 1204.5pt>
 File: Images/mavproxy2.png Graphic file (type png)
 <use Images/mavproxy2.png>
 Package pdftex.def Info: Images/mavproxy2.png  used on input line 796.
 (pdftex.def)             Requested size: 472.31577pt x 295.18779pt.
  [33 <./Images/mavproxy11.png> <./Images/mavproxy2.png>]
-<Images/Hardware Requirements Drone.png, id=612, 1054.43938pt x 322.70563pt>
+<Images/Hardware Requirements Drone.png, id=609, 1054.43938pt x 322.70563pt>
 File: Images/Hardware Requirements Drone.png Graphic file (type png)
 <use Images/Hardware Requirements Drone.png>
 Package pdftex.def Info: Images/Hardware Requirements Drone.png  used on input line 810.
 (pdftex.def)             Requested size: 472.31577pt x 144.55144pt.
-<Images/PinoutGood.png, id=613, 413.04312pt x 338.76563pt>
+<Images/PinoutGood.png, id=610, 413.04312pt x 338.76563pt>
 File: Images/PinoutGood.png Graphic file (type png)
 <use Images/PinoutGood.png>
 Package pdftex.def Info: Images/PinoutGood.png  used on input line 820.
 (pdftex.def)             Requested size: 283.39233pt x 232.43556pt.
  [34 <./Images/Hardware Requirements Drone.png>]
-<Images/Wifi1.png, id=622, 1927.2pt x 1084.05pt>
+<Images/Wifi1.png, id=619, 1927.2pt x 1084.05pt>
 File: Images/Wifi1.png Graphic file (type png)
 <use Images/Wifi1.png>
 Package pdftex.def Info: Images/Wifi1.png  used on input line 828.
 (pdftex.def)             Requested size: 472.31577pt x 265.669pt.
-<Images/Wifi3.png, id=624, 1445.4pt x 813.0375pt>
+<Images/Wifi3.png, id=621, 1445.4pt x 813.0375pt>
 File: Images/Wifi3.png Graphic file (type png)
 <use Images/Wifi3.png>
 Package pdftex.def Info: Images/Wifi3.png  used on input line 835.
 (pdftex.def)             Requested size: 472.31577pt x 265.67314pt.
  [35 <./Images/PinoutGood.png> <./Images/Wifi1.png>]
-<Images/Wifi4.png, id=636, 1445.4pt x 813.0375pt>
+<Images/Wifi4.png, id=633, 1445.4pt x 813.0375pt>
 File: Images/Wifi4.png Graphic file (type png)
 <use Images/Wifi4.png>
 Package pdftex.def Info: Images/Wifi4.png  used on input line 842.
 (pdftex.def)             Requested size: 472.31577pt x 265.67314pt.
-<Images/Wifi6.png, id=638, 1445.4pt x 813.0375pt>
+<Images/Wifi6.png, id=635, 1445.4pt x 813.0375pt>
 File: Images/Wifi6.png Graphic file (type png)
 <use Images/Wifi6.png>
 Package pdftex.def Info: Images/Wifi6.png  used on input line 851.
 (pdftex.def)             Requested size: 472.31577pt x 265.67314pt.
  [36 <./Images/Wifi3.png> <./Images/Wifi4.png>]
-<Images/Wifi7.png, id=649, 1445.4pt x 813.0375pt>
+<Images/Wifi7.png, id=646, 1445.4pt x 813.0375pt>
 File: Images/Wifi7.png Graphic file (type png)
 <use Images/Wifi7.png>
 Package pdftex.def Info: Images/Wifi7.png  used on input line 858.
 (pdftex.def)             Requested size: 472.31577pt x 265.67314pt.
-<Images/Wifi9.png, id=651, 1445.4pt x 813.0375pt>
+<Images/Wifi9.png, id=648, 1445.4pt x 813.0375pt>
 File: Images/Wifi9.png Graphic file (type png)
 <use Images/Wifi9.png>
 Package pdftex.def Info: Images/Wifi9.png  used on input line 865.
 (pdftex.def)             Requested size: 472.31577pt x 265.67314pt.
  [37 <./Images/Wifi6.png> <./Images/Wifi7.png>]
-<Images/Mission0.jpg, id=661, 3787.14874pt x 1753.55125pt>
+<Images/Mission0.jpg, id=658, 3787.14874pt x 1753.55125pt>
 File: Images/Mission0.jpg Graphic file (type jpg)
 <use Images/Mission0.jpg>
 Package pdftex.def Info: Images/Mission0.jpg  used on input line 876.
 (pdftex.def)             Requested size: 472.31577pt x 218.68498pt.
-
-
-LaTeX Warning: Citation `missionplanner_installation' on page 38 undefined on input line 881.
-
-<Images/Mission1.png, id=663, 1283.29437pt x 686.565pt>
+<Images/Mission1.png, id=661, 1283.29437pt x 686.565pt>
 File: Images/Mission1.png Graphic file (type png)
 <use Images/Mission1.png>
 Package pdftex.def Info: Images/Mission1.png  used on input line 885.
 (pdftex.def)             Requested size: 472.31577pt x 252.68413pt.
-[38 <./Images/Wifi9.png> <./Images/Mission0.jpg>]
-<Images/Mission2.png, id=672, 1284.29813pt x 679.53876pt>
+ [38 <./Images/Wifi9.png> <./Images/Mission0.jpg>]
+<Images/Mission2.png, id=671, 1284.29813pt x 679.53876pt>
 File: Images/Mission2.png Graphic file (type png)
 <use Images/Mission2.png>
 Package pdftex.def Info: Images/Mission2.png  used on input line 892.
 (pdftex.def)             Requested size: 472.31577pt x 249.90117pt.
-<Images/Mission3.png, id=674, 1284.29813pt x 675.02188pt>
+<Images/Mission3.png, id=673, 1284.29813pt x 675.02188pt>
 File: Images/Mission3.png Graphic file (type png)
 <use Images/Mission3.png>
 Package pdftex.def Info: Images/Mission3.png  used on input line 899.
@@ -1728,69 +1719,63 @@ File: Images/Mission1.png Graphic file (type png)
 <use Images/Mission1.png>
 Package pdftex.def Info: Images/Mission1.png  used on input line 906.
 (pdftex.def)             Requested size: 472.31577pt x 252.68413pt.
-<Images/Mission5.png, id=685, 201.75375pt x 97.86563pt>
+<Images/Mission5.png, id=684, 201.75375pt x 97.86563pt>
 File: Images/Mission5.png Graphic file (type png)
 <use Images/Mission5.png>
 Package pdftex.def Info: Images/Mission5.png  used on input line 913.
 (pdftex.def)             Requested size: 236.15788pt x 114.55457pt.
  [40 <./Images/Mission3.png>]
-<Images/Mission6.png, id=695, 1284.29813pt x 683.55376pt>
+<Images/Mission6.png, id=694, 1284.29813pt x 683.55376pt>
 File: Images/Mission6.png Graphic file (type png)
 <use Images/Mission6.png>
 Package pdftex.def Info: Images/Mission6.png  used on input line 951.
 (pdftex.def)             Requested size: 472.31577pt x 251.3777pt.
  [41 <./Images/Mission5.png>]
-<Images/GCSTelem1.png, id=704, 1927.2pt x 1084.05pt>
+<Images/GCSTelem1.png, id=703, 1927.2pt x 1084.05pt>
 File: Images/GCSTelem1.png Graphic file (type png)
 <use Images/GCSTelem1.png>
-Package pdftex.def Info: Images/GCSTelem1.png  used on input line 970.
+Package pdftex.def Info: Images/GCSTelem1.png  used on input line 971.
 (pdftex.def)             Requested size: 472.31577pt x 265.669pt.
  [42 <./Images/Mission6.png>]
-<Images/GCSTelem3.png, id=714, 1927.2pt x 1084.05pt>
+<Images/GCSTelem3.png, id=713, 1927.2pt x 1084.05pt>
 File: Images/GCSTelem3.png Graphic file (type png)
 <use Images/GCSTelem3.png>
-Package pdftex.def Info: Images/GCSTelem3.png  used on input line 985.
+Package pdftex.def Info: Images/GCSTelem3.png  used on input line 986.
 (pdftex.def)             Requested size: 472.31577pt x 265.669pt.
  [43 <./Images/GCSTelem1.png> <./Images/GCSTelem3.png>]
-<Images/DSC05445.jpg, id=725, 1238.91429pt x 697.09576pt>
-File: Images/DSC05445.jpg Graphic file (type jpg)
-<use Images/DSC05445.jpg>
-Package pdftex.def Info: Images/DSC05445.jpg  used on input line 995.
-(pdftex.def)             Requested size: 472.31577pt x 265.75008pt.
-<Images/NameChange1.png, id=730, 1445.4pt x 813.0375pt>
+<Images/NameChange1.png, id=728, 1445.4pt x 813.0375pt>
 File: Images/NameChange1.png Graphic file (type png)
 <use Images/NameChange1.png>
-Package pdftex.def Info: Images/NameChange1.png  used on input line 1014.
+Package pdftex.def Info: Images/NameChange1.png  used on input line 1015.
 (pdftex.def)             Requested size: 472.31577pt x 265.67314pt.
- [44 <./Images/DSC05445.jpg>]
-<Images/NameChange3.png, id=738, 1927.2pt x 1084.05pt>
+<Images/NameChange3.png, id=729, 1927.2pt x 1084.05pt>
 File: Images/NameChange3.png Graphic file (type png)
 <use Images/NameChange3.png>
-Package pdftex.def Info: Images/NameChange3.png  used on input line 1022.
+Package pdftex.def Info: Images/NameChange3.png  used on input line 1023.
 (pdftex.def)             Requested size: 472.31577pt x 265.669pt.
-<Images/NameChange2.png, id=740, 1445.4pt x 813.0375pt>
+ [44 <./Images/NameChange1.png>]
+<Images/NameChange2.png, id=738, 1445.4pt x 813.0375pt>
 File: Images/NameChange2.png Graphic file (type png)
 <use Images/NameChange2.png>
-Package pdftex.def Info: Images/NameChange2.png  used on input line 1031.
+Package pdftex.def Info: Images/NameChange2.png  used on input line 1032.
 (pdftex.def)             Requested size: 472.31577pt x 265.67314pt.
- [45 <./Images/NameChange1.png> <./Images/NameChange3.png>]
+ [45 <./Images/NameChange3.png> <./Images/NameChange2.png>]
 <Images/Works2.png, id=748, 623.32875pt x 433.62pt>
 File: Images/Works2.png Graphic file (type png)
 <use Images/Works2.png>
-Package pdftex.def Info: Images/Works2.png  used on input line 1059.
+Package pdftex.def Info: Images/Works2.png  used on input line 1060.
 (pdftex.def)             Requested size: 425.0813pt x 295.71123pt.
- [46 <./Images/NameChange2.png>]
-<Images/Works1.png, id=766, 1392.70313pt x 441.90094pt>
+<Images/Works1.png, id=750, 1392.70313pt x 441.90094pt>
 File: Images/Works1.png Graphic file (type png)
 <use Images/Works1.png>
-Package pdftex.def Info: Images/Works1.png  used on input line 1067.
+Package pdftex.def Info: Images/Works1.png  used on input line 1068.
 (pdftex.def)             Requested size: 472.31577pt x 149.85999pt.
- [47 <./Images/Works2.png> <./Images/Works1.png>] [48
+ [46 <./Images/Works2.png>] [47 <./Images/Works1.png>] [48
 
 ] (main.bbl) [49
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20260421230423 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
+runsystem(latexminted cleantemp  --timestamp 20260508134704 FAD58DE7366495DB4650CFEFAC2FCD61)...disabled (restricted).
 
  (main.aux)
  ***********
@@ -1808,17 +1793,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6FBDC67E5CAC9A2C46FED7019900EB31;5890.
  ) 
 Here is how much of TeX's memory you used:
- 38295 strings out of 467871
- 796516 string characters out of 5417408
+ 38281 strings out of 467871
+ 796181 string characters out of 5417408
  1456811 words of memory out of 5000000
- 66302 multiletter control sequences out of 15000+600000
+ 66289 multiletter control sequences out of 15000+600000
  649966 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,12n,107p,972b,1184s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,12n,107p,979b,1184s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt1095.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk> <C:\Users\Matthew\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:/Users/Matthew/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Matthew/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (50 pages, 45010296 bytes).
+Output written on main.pdf (50 pages, 36648619 bytes).
 PDF statistics:
- 1449 PDF objects out of 1728 (max. 8388607)
- 210 named destinations out of 1000 (max. 500000)
- 777 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1451 PDF objects out of 1728 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
+ 767 words of extra memory for PDF output out of 10000 (max. 10000000)
 

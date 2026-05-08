@@ -1,9 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{matthew}
-Cheuk Tam.
-\newblock A dummy guide on using the vicon positioning system in the cranfield
-  flight arena, 27 Feb 2026.
+\bibitem{grace}
+Grace.
+\newblock Personal communication, 2026.
+\newblock Verbal statement, Some time in March 2026.
 
 \bibitem{pyvicon}
 Mathieu Garon.
@@ -11,14 +11,22 @@ Mathieu Garon.
 \newblock \url{https://github.com/MathGaron/pyvicon}, 2024.
 \newblock Accessed: 2026-03-26.
 
-\bibitem{grace}
-Grace.
-\newblock Personal communication, 2026.
-\newblock Verbal statement, Some time in March 2026.
+\bibitem{matthew}
+Cheuk Tam.
+\newblock A dummy guide on using the vicon positioning system in the cranfield
+  flight arena, 27 Feb 2026.
 
 \bibitem{engineeringprojects_esp8266}
 Adnan Aqeel.
 \newblock Esp8266 pinout, datasheet, features \& applications, August 2018.
 \newblock Accessed: 30 March 2026.
+
+\bibitem{missionplanner_installation}
+ArduPilot~Documentation Team.
+\newblock Mission planner installation guide.
+\newblock
+  \url{https://ardupilot.org/planner/docs/mission-planner-installation.html},
+  n.d.
+\newblock Accessed: 2026-04-18.
 
 \end{thebibliography}

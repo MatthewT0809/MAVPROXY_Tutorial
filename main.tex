@@ -123,7 +123,7 @@
 
 
 \section{Pre word}
-It is to my astonishment when I first found out that our most advanced, well equipped, and modern flight arena does not have an actual written guide on using one of the most, if not, the most, valuable system within the flight arena, the VICON positioning system. For the past 2 weeks or so I've been asking around and seems like each PhD Student have their own way of connecting to VICON, which had led to a very incoherent and beginner unfriendly approach in using VICON when starting out. Hence, the creation of this guide! This glide's content is sourced from words of mouth form previous GDP member and PhD students, as well as some heuristic struggle. By the end of this report, the goal is to ensure future cohorts from the MSc programme can figure this out without doing much of the painful debugging progress. \\
+Hello, It is to my astonishment when I first found out that our most advanced, well equipped, and modern flight arena does not have an actual written guide on using one of the most, if not, the most, valuable system within the flight arena, the VICON positioning system. For the past 2 weeks or so I've been asking around and seems like each PhD Student have their own way of connecting to VICON, which had led to a very incoherent and beginner unfriendly approach in using VICON when starting out. Hence, the creation of this guide! This glide's content is sourced from words of mouth form previous GDP member and PhD students, as well as some heuristic struggle. By the end of this report, the goal is to ensure future cohorts from the MSc programme can figure this out without doing much of the painful debugging progress. \\
 
 The report credits to Grace, Pol for the information provided. \\
 
@@ -483,12 +483,12 @@ The way objects are recognized in the VICON algorithm is that it remembers the a
 
 To make a new Object, you first need to glue the IR markers on your drone (4+ markers as a minimum empirical requirement). An example of which is seen below in figure \ref{fig:18}. 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\linewidth]{Images/DSC05445.JPG}
-    \caption{Example Image of IR Markers Placement}
-    \label{fig:18}
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\linewidth]{Images/DSC05445.JPG}
+%     \caption{Example Image of IR Markers Placement}
+%     \label{fig:18}
+% \end{figure}
 
 Once this is done, physically put your drone into the flight arena. Align the front (North) of your drone to the origin's North. Pick up your wand and return to the host PC. 
 \begin{figure}[H]
@@ -952,7 +952,8 @@ Head towards \textit{SETUP}, \textit{Flight Modes}, you should navigate to a scr
     \caption{Pinout from Pixhawk 6c to ESP8266.}
     \label{fig:mission6}
 \end{figure}
-Change the Flight Modes 1, 4, 6 into \textit{Stablize}, \textit{Alt Hold}, and \textit{Loiter}; Press \textit{Save Modes} to save your edits afterwards. Here I am using radio channel 5 on my transmitter, which corresponds to a 3 way switch, as my safety switch between Vicon indepedent flight mode to Vicon dependant flight mode,more information about the modes in section below.  \\
+
+Change the Flight Modes 1, 4, 6 into \textit{Stablize}, \textit{Alt Hold}, and \textit{Loiter}; Press \textit{Save Modes} to save your edits afterwards. Here I am using radio channel 5 on my transmitter, which corresponds to a 3 way switch, as my safety switch between Vicon indepedent flight mode to Vicon dependant flight mode,more information about the modes in section below.
 
 \vspace{0.4cm} 
 
@@ -990,12 +991,12 @@ Recalling the Host Port number from section \ref{fig:wifi6}, replace 14554 with 
 \subsection{IR Markers}
 Now your GCS connetions are all done, we are moving towards the final minors steps before actually flying the drone with VICON! Mount the IR markers with hot glue on location of your drones that is easily seen by the cameras. Have at least 4+ per drone and place them in an assymptical arragement, an example is shown in figure \ref{fig:irmarkers} below:  
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Images/DSC05445.jpg}
-    \caption{Example of Drone IR Markers layout.}
-    \label{fig:irmarkers}
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=1\linewidth]{Images/DSC05445.jpg}
+%     \caption{Example of Drone IR Markers layout.}
+%     \label{fig:irmarkers}
+% \end{figure}
 
 If you are flying more than 1 drone, your assortment of IR markers must be geometrically different, otherwise the Vicon System may mistake the wrong object to track. (This has happened to me before and caused a crash.) 
 
