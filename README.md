@@ -1,10 +1,13 @@
-## **✈️ ABOUT ME**
+# ✈️ Vicon Positioning Guide for Pixhawk6C
 
-[![PDF Preview](Images/meme0.png)](main.pdf)
+## 📄 Full PDF Guide
+<embed src="main.pdf" width="100%" height="900px" />
 
+---
+
+## 💡 About This Document
 See `main.pdf` for the tutorial on how to use the VICON positioning system with a Pixhawk6C.  
-This document was originally aimed at AVDC MSc students at Cranfield for their GDP project,  
-but I will also release it to the ArduPilot forum after receiving feedback that it is useful.
+This document was originally aimed at AVDC MSc students at Cranfield for their GDP project, but I will also release it to the ArduPilot forum after receiving feedback that it is useful.
 
 ---
 
@@ -40,3 +43,6 @@ If you do ask, that means I've failed, and I will go cry in a hole.
 ## **⭐ STAR THIS REPOSITORY**
 
 If this was useful, please consider starring the repository!
+
+
+[![PDF Preview](Images/meme0.png)](main.pdf)
