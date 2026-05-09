@@ -1,0 +1,239 @@
+\section{Ground Control Station Setup}
+\label{sec:GCS}
+Now, in this section we first set up the Ground Control Station (GCS) as seen above in figure \ref{fig:GCS}. This section goes over the installation of VICON SDK, Pyvicon, MavProxy/Mavlink, and some corresponding package dependencies. This section is prone to some debugging against my best wishes, and everything is not really Plug N Play - Some resliences is required! 
+\subsection{Hardware Required}
+Please liaise with your corresponding supervisor/client and prepare a Linux running laptop with both Wifi and Ethernet Capability \footnote{Note that when runing Linux, some laptop's wifi card does not support Ubuntu 18.04, which you will need to rebuild the laptop to 20.04.}, a router (in the flight arena), and an ethernet cable (in the flight arena), as seen in figure \ref{fig:Hardware Requirement}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Hardware Requirements.png}
+    \caption{Hardware Requirement}
+    \label{fig:Hardware Requirement}
+\end{figure}
+
+\vfill
+\begin{center}
+    \textbf{This space intentionally left blank}
+\end{center}
+\vfill
+% \subsection{Dual-booting Procedure}
+% Many of us uses Window for their entire life (Myself included), and it is a struggle to switch from Window to Linux without piror knowledge. Here, I will show you a step by step instruction on Dual-booting your laptop into Linux/Window System. If you already have a Linux System, this section can be skipped. Kindly note that I suggest you ask for a work laptop instead of your personal one as Dual-booting is intrinsicly an "easy to mess up" process. For statistic, 2/12 students in my cohort wiped out all their personal data while dual-booting their personal computer, so warnings to you! 
+\clearpage
+
+
+
+\subsection{Downloading VICON SDK}
+To download the VICON SDK on the Linux computer, visit \href{https://www.vicon.com/software/datastream-sdk/}{https://www.vicon.com/software/datastream-sdk/}, the website looks like figure \ref{fig:SDK1}: 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Images/SDK1.png}
+    \caption{VICON SDK Download Website}
+    \label{fig:SDK1}
+\end{figure}
+Scroll down from the page to what is shown in figure \ref{fig:SDK2}:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/SDK2.png}
+    \caption{VICON SDK Download Page}
+    \label{fig:SDK2}
+\end{figure}
+Click the downloads tab, install the \textit{Datastream SDK 1.10.0}, write down \textit{an email}, \textit{No} for existing customer, \textit{Tracker} for the Software to Download, click \textit{DOWNLOAD}, as seen in figure \ref{fig:SDK3E}:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Images/SDK3E.png}
+    \caption{VICON SDK Download Information}
+    \label{fig:SDK3E}
+\end{figure}
+Click \textit{Download} as seen in figure \ref{fig:SDK4}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/SDK4.png}
+    \caption{Enter Caption}
+    \label{fig:SDK4}
+\end{figure}
+Navigate to the your \textit{Downloads} Folder, click into \textit{Vicon\_Datastream\_1.10\_123216h.zip}, click into \textit{20200407\_123216h}, into \textit{Linux64}, into \textit{Release}, as seen in figure \ref{fig:SDK59}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Images/SDK59.png}
+    \caption{Enter Caption}
+    \label{fig:SDK59}
+\end{figure}
+Right click on \textit{ViconDataStreamSDK\_1.10.0.123216h.zip}, extract the file, you should have a file like figure \ref{fig:SDK9}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/SDK9.png}
+    \caption{Extracted file of Linux64 Vicon SDK}
+    \label{fig:SDK9}
+\end{figure}
+Drag the extracted file of the Vicon SDK back to the download dictionary as shown in figure \ref{fig:SDK10}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Images/SDK10.png}
+    \caption{Moving Vicon SDK into download folders}
+    \label{fig:SDK10}
+\end{figure}
+Remove the original zip file, they are no longer needed, you should have a singular file as shown in figure \ref{fig:SDK11}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/SDK11.png}
+    \caption{Linux64 Vicon SDK extracted in Downloads Folder}
+    \label{fig:SDK11}
+\end{figure}
+Click into the SDK folder (\textit{ViconDataStreamSDK\_1.10.0.123216h}), you should see 2 zipped files inside it like figure \ref{fig:SDK14}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/SDK14.png}
+    \caption{Vicon SDK Folder}
+    \label{fig:SDK14}
+\end{figure}
+Extract the 2 zipped files as shown in figure \ref{fig:SDK15}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/SDK15.png}
+    \caption{Extracted 2 Subfolders of Vicon SDK Folder}
+    \label{fig:SDK15}
+\end{figure}
+
+\subsection{Downloading pyvicon}
+After SDK is installed, you will need install a custom python script by MathGaron \cite{pyvicon} that bridges the VICON SDK to MAVPROXY. This is installed via
+ \href{https://github.com/MathGaron/pyvicon}{https://github.com/MathGaron/pyvicon}, as seen in figure \ref{fig:SDK155}:
+ \begin{figure}[H]
+     \centering
+     \includegraphics[width=1\linewidth]{Images/SDK155.png}
+     \caption{Install the Github file. (Click \textit{Code}, and \textit{Download Zip})}
+     \label{fig:SDK155}
+\end{figure}
+Extract the zipped pyvicon folder into your download folders. Your donwload folder should now have the Vicon SDK folder \& pyvicon folder, as seen in figure \ref{fig:pyvicon1}: 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/pyvicon1.png}
+    \caption{Enter Caption}
+    \label{fig:pyvicon1}
+\end{figure}
+\subsection{Merging VICON SDK into pyvicon}
+Next, you need to merge the .so files of the VICON SDK into your computer's /user/local/lib. Open your Linux terminal and run a code as shown in \ref{fig:SDK16}.\\
+The code is: \\
+\begin{lstlisting}[basicstyle=\small\ttfamily, numbers=left,breaklines]{bash}
+sudo find ~/Downloads/ViconDataStreamSDK_1.10.0.123216h -name "*.so" -exec cp {} /usr/local/lib/ \;
+\end{lstlisting}
+You also need to merge the .cpp and h files of Vicon SDK into pyvicon, run this 2 codes in the terminal that automates this, as seen in figure \ref{fig:SDK195}:
+\begin{lstlisting}[basicstyle=\small\ttfamily, numbers=left,breaklines]{bash}
+sudo find ~/Downloads/ViconDataStreamSDK_1.10.0.123216h -name "*.cpp" -exec mv {} ~/Downloads/pyvicon-master/pyvicon/ \;
+\end{lstlisting}
+
+\begin{lstlisting}[basicstyle=\small\ttfamily, numbers=left,breaklines]{bash}
+sudo find ~/Downloads/ViconDataStreamSDK_1.10.0.123216h -name "*.cpp" -exec mv {} ~/Downloads/pyvicon-master/pyvicon/ \;
+\end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/SDK195.png}
+    \caption{File merging codes}
+    \label{fig:SDK195}
+\end{figure}
+\subsection{Setting up pyvicon}
+Once the files are merged, we can run the python script setup for pyvicon. (Please install python3 in Linux if you haven't!) 
+Run: 
+\begin{lstlisting}[basicstyle=\small\ttfamily, numbers=left,breaklines]{bash}
+sudo python3 setup.py install
+\end{lstlisting}
+
+You will also need to add \textit{$\sim$/.local/bin} to \textit{PATH} for pyvicon:
+\begin{lstlisting}
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+\end{lstlisting}
+Both commands can be seen in figure \ref{fig:pyvicon4}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/pyvicon4.png}
+    \caption{pyvicon setup and adding ~/local/bin to PATH}
+    \label{fig:pyvicon4}
+\end{figure}
+\subsection{Installing Dependencies Packages}
+A few dependencies are needed in order for pyvicon \& Mavproxy to work, run the following, which is seen in figure \ref{fig:setup9}: 
+\begin{lstlisting}
+    sudo apt-get install libgtk-3-dev 
+    sudo apt remove modemmanager -y
+    python3 -m pip install --user pathlib2
+    python3 -m pip install --user matplotlib
+    python3 -m pip install --user opencv-python
+    python3 -m pip install --user Cython
+    python3 -m pip install --user wxpython
+\end{lstlisting}
+Do note that this part is usually tricky as everyone's system has different versions of Python3, which inherently leads to different package that is supported with your version of Python3. For this step I recommend installing each package one by one, and troubleshooting whenever a package goes wrong. It is expected that you will have trouble with this step as I also had a lot of trouble when installing this in different computers. Refer to appendix A for common debugging solutions that has worked for me.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/setup9.png}
+    \caption{Example of dependencies installation}
+    \label{fig:setup9}
+\end{figure}
+\subsection{Hardware setup}
+Once all dependencies are installed, musculoskeletally move towards the Host PC (Refer to 1st Guide \cite{matthew}) with your ground control station, locate the Vicon Ethernet Cable as shown in figure \ref{fig:hardware}. Connect the ethernet cable to your ground control station. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Hardware photo.png}
+    \caption{Photo of Vicon Ethernet Cable}
+    \label{fig:hardware}
+\end{figure}
+
+\subsection{Network setup}
+Once connected to the Ethernet cable, you will need to name your source of your Vicon positional data's ip address as \textit{vicon}, this can be done by typing this in Terminal, as shown in figure \ref{fig:network1}:\footnote{If you do some crawling around, you will note that this ethernet cable actually comes from within the flight arena, which would be useful if you want your GCS within the flight arena to test localisation later on.}
+\begin{lstlisting}
+    sudo nano /etc/hosts
+\end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/network1.png}
+    \caption{Code for network name editing}
+    \label{fig:network1}
+\end{figure}
+A window will show up like figure \ref{fig:network2}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/network2.png}
+    \caption{Enter Caption}
+    \label{fig:network2}
+\end{figure}
+Add \textit{192.168.0.218 vicon} as shown in figure \ref{fig:network3}. Then press Ctrl+O to save the changes, Ctrl+X to exit the window. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/network3.png}
+    \caption{Enter Caption}
+    \label{fig:network3}
+\end{figure}
+Test your connection to vicon vai ethernet cable by doing: 
+\begin{lstlisting}
+    ping vicon
+\end{lstlisting}
+If \textit{64 bytes from vicon (192.168.0.218): icmp\_seq=1 ttl=128 time=0.517ms} messages begin appearing like shown in figure \ref{fig:network5}, you have a correct connection between Vicon Tracker and your computer!
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/network5.png}
+    \caption{Enter Caption}
+    \label{fig:network5}
+\end{figure}
+\subsection{Installing Mavproxy \& Mavlink}
+Now (finally), we go into installation of Mavlink and Mavproxy. Run the following code as shown in figure \ref{fig:mavproxy11}: 
+\begin{lstlisting}
+    python3 -m pip install --upgrade --user pymavlink
+    python3 -m pip install --upgrade --user mavproxy
+\end{lstlisting}
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{Images/mavproxy11.png}
+        \caption{Installing Mavproxy and Mavlink}
+        \label{fig:mavproxy11}
+    \end{figure}
+To test if your mavproxy installation is correct, run the following:
+
+\begin{lstlisting}
+    mavproxy.py --master :14550 --console --map
+\end{lstlisting}
+
+\subsection{Finishing}
+You should see the console and map window pops out as shown in figure \ref{fig:mavproxy2}. It will mention that link1 is down from the console, which is correct as you have not connected to your drone yet. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/mavproxy2.png}
+    \caption{Enter Caption}
+    \label{fig:mavproxy2}
+\end{figure}

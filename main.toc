@@ -1,0 +1,57 @@
+\contentsline {section}{\numberline {1}Pre word}{3}{section.1}%
+\contentsline {section}{\numberline {2}The Big Picture}{4}{section.2}%
+\contentsline {section}{\numberline {3}Operating VICON}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The Hardware}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Turn on Vicon cameras and Host PC}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Create a Camera Mask}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}How to turn on the lights of Flight Arena}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Calibrate the Cameras}{9}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Set Origin}{13}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Defining New Objects}{15}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Finishing}{20}{subsection.3.8}%
+\contentsline {section}{\numberline {4}Ground Control Station Setup}{21}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Hardware Required}{21}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Downloading VICON SDK}{22}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Downloading pyvicon}{27}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Merging VICON SDK into pyvicon}{28}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Setting up pyvicon}{28}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Installing Dependencies Packages}{29}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Hardware setup}{30}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Network setup}{31}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Installing Mavproxy \& Mavlink}{32}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Finishing}{33}{subsection.4.10}%
+\contentsline {section}{\numberline {5}Drone Setup}{34}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Hardware Required}{34}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}ESP8266 to PixHawk6C}{34}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}MissionPlanner Configuration}{38}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Mavproxy Telemetry}{42}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}IR Markers}{44}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}GCS to Vicon}{44}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Finishing}{47}{subsection.5.7}%
+\contentsline {section}{\numberline {6}Your first flight}{48}{section.6}%
+\contentsline {section}{\numberline {7}MAVLink-Based Position Control in Guided Mode}{49}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Overview}{49}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}LOCAL\_NED Coordinate Frame}{49}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Obtaining Local Position}{49}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Flight Mode and Arming}{50}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Arming}{50}{subsubsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.5}Takeoff Procedure}{50}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Position Control Using SET\_POSITION\_TARGET\_LOCAL\_NED}{50}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}Type Mask Logic}{51}{subsubsection.7.6.1}%
+\contentsline {paragraph}{Interpretation:}{51}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}Sending Position Setpoints}{51}{subsubsection.7.6.2}%
+\contentsline {subsection}{\numberline {7.7}Continuous Setpoint Streaming}{51}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Landing Procedure}{52}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Code Examples and Practical Execution}{52}{subsection.7.9}%
+\contentsline {subsubsection}{\numberline {7.9.1}Connecting to the MAVLink stream}{52}{subsubsection.7.9.1}%
+\contentsline {subsubsection}{\numberline {7.9.2}Flight mode, arming, and takeoff}{52}{subsubsection.7.9.2}%
+\contentsline {subsubsection}{\numberline {7.9.3}Reading the current local position}{53}{subsubsection.7.9.3}%
+\contentsline {subsubsection}{\numberline {7.9.4}Sending a local position instruction}{54}{subsubsection.7.9.4}%
+\contentsline {subsubsection}{\numberline {7.9.5}Holding position by repeatedly sending the same command}{54}{subsubsection.7.9.5}%
+\contentsline {subsubsection}{\numberline {7.9.6}Landing}{55}{subsubsection.7.9.6}%
+\contentsline {subsubsection}{\numberline {7.9.7}Minimal runnable example}{55}{subsubsection.7.9.7}%
+\contentsline {subsubsection}{\numberline {7.9.8}Communication Logic and Port Usage}{57}{subsubsection.7.9.8}%
+\contentsline {subsubsection}{\numberline {7.9.9}Running the Code}{57}{subsubsection.7.9.9}%
+\contentsline {subsection}{\numberline {7.10}General Remarks}{58}{subsection.7.10}%
+\contentsline {subsection}{\numberline {7.11}Further Reading}{58}{subsection.7.11}%
+\contentsline {section}{\numberline {8}Concluding Remark}{59}{section.8}%
