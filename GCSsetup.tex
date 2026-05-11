@@ -2,7 +2,7 @@
 \label{sec:GCS}
 Now, in this section we first set up the Ground Control Station (GCS) as seen above in figure \ref{fig:GCS}. This section goes over the installation of VICON SDK, Pyvicon, MavProxy/Mavlink, and some corresponding package dependencies. This section is prone to some debugging against my best wishes, and everything is not really Plug N Play - Some resliences is required! 
 \subsection{Hardware Required}
-Please liaise with your corresponding supervisor/client and prepare a Linux running laptop with both Wifi and Ethernet Capability \footnote{Note that when runing Linux, some laptop's wifi card does not support Ubuntu 18.04, which you will need to rebuild the laptop to 20.04.}, a router (in the flight arena), and an ethernet cable (in the flight arena), as seen in figure \ref{fig:Hardware Requirement}.
+Please liaise with your corresponding supervisor/client and prepare a Linux running laptop with both Wifi and Ethernet Capability \footnote{Note that when runing Linux, some laptop's wifi card does not support Ubuntu 18.04, which you will need to rebuild the laptop to 20.04.} \footnote{Don't use Window Subsystem for Linux (WSL), it is a big hassle to figure out port communication and other stuff.} \footnote{Dual-booting your laptop into Linux/Window configuration is best if you only have a Window. \textbf{\textcolor{red}{Warnings however, dual-booting is intrinsicly an "easy to mess up" process with catastrophic consequences. Somes statistics for you, 2/12 students in my MSc cohort wiped out all their personal data while dual-booting their personal computer, so please backup all your data before dual-booting and make sure you know what you're doing!!!!}}}, a router (in the flight arena), and an ethernet cable (in the flight arena), as seen in figure \ref{fig:Hardware Requirement}.
 
 \begin{figure}[H]
     \centering
@@ -11,15 +11,37 @@ Please liaise with your corresponding supervisor/client and prepare a Linux runn
     \label{fig:Hardware Requirement}
 \end{figure}
 
-\vfill
-\begin{center}
-    \textbf{This space intentionally left blank}
-\end{center}
-\vfill
-% \subsection{Dual-booting Procedure}
-% Many of us uses Window for their entire life (Myself included), and it is a struggle to switch from Window to Linux without piror knowledge. Here, I will show you a step by step instruction on Dual-booting your laptop into Linux/Window System. If you already have a Linux System, this section can be skipped. Kindly note that I suggest you ask for a work laptop instead of your personal one as Dual-booting is intrinsicly an "easy to mess up" process. For statistic, 2/12 students in my cohort wiped out all their personal data while dual-booting their personal computer, so warnings to you! 
-\clearpage
+\subsection{Setting Up Conda Virtual Environment}
+Before we start setting up the softwares inside the virtual environment, let's set up a Virtual Environment (Venv). This step is to segregate your files you are going to install here away from the rest of the computer. This ensures that the package we download does not influence any other projects you have going on in your computer. (For example, you have 2 projects which requires 2 different version of a package, leading to a conflict). The use of venv is an industry pratice. To install the virtual environment, you can \href{https://www.anaconda.com/docs/getting-started/miniconda/install/linux-install}{https://www.anaconda.com/docs/getting-started/miniconda/install/linux-install}
 
+
+
+Open a new virtual environment by typing:
+\begin{lstlisting}[basicstyle=\small\ttfamily, numbers=left,breaklines]{bash}
+conda create -n VICON python=3.10
+\end{lstlisting}
+
+When prompted, type \textit{y} to confirm the package installed. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/VirtualEnvironment/One.png}
+    \caption{Setting up the virtual environment for Vicon.}
+\end{figure}
+
+Once opened, activate the environment by pressing:
+
+\begin{lstlisting}
+conda activate VICON
+\end{lstlisting}
+
+It should look something like figure \ref{fig:VE2} below:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/VirtualEnvironment/Two.png}
+    \caption{Activating Virtual Environment}
+    \label{fig:VE2}
+\end{figure}
 
 
 \subsection{Downloading VICON SDK}
@@ -111,7 +133,7 @@ Extract the zipped pyvicon folder into your download folders. Your donwload fold
     \label{fig:pyvicon1}
 \end{figure}
 \subsection{Merging VICON SDK into pyvicon}
-Next, you need to merge the .so files of the VICON SDK into your computer's /user/local/lib. Open your Linux terminal and run a code as shown in \ref{fig:SDK16}.\\
+Next, you need to merge the .so files of the VICON SDK into your computer's /user/local/lib. Open your Linux terminal and run a code as shown in \ref{fig:SDK195}.\\
 The code is: \\
 \begin{lstlisting}[basicstyle=\small\ttfamily, numbers=left,breaklines]{bash}
 sudo find ~/Downloads/ViconDataStreamSDK_1.10.0.123216h -name "*.so" -exec cp {} /usr/local/lib/ \;
@@ -167,7 +189,7 @@ Do note that this part is usually tricky as everyone's system has different vers
     \label{fig:setup9}
 \end{figure}
 \subsection{Hardware setup}
-Once all dependencies are installed, musculoskeletally move towards the Host PC (Refer to 1st Guide \cite{matthew}) with your ground control station, locate the Vicon Ethernet Cable as shown in figure \ref{fig:hardware}. Connect the ethernet cable to your ground control station. 
+Once all dependencies are installed, musculoskeletally move towards the Host PC with your GCS, locate the Vicon Ethernet Cable as shown in figure \ref{fig:hardware}. Connect the ethernet cable to your ground control station. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Hardware photo.png}
