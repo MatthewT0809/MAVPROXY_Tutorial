@@ -382,9 +382,27 @@ INPUT /home/inspection/.miktex/texmfs/install/tex/latex/listings/listings.cfg
 INPUT ./main.aux
 INPUT ./main.aux
 INPUT main.aux
+INPUT ./theBigPicture.aux
+INPUT ./theBigPicture.aux
+INPUT theBigPicture.aux
+INPUT ./VICONsetup.aux
+INPUT ./VICONsetup.aux
+INPUT VICONsetup.aux
 INPUT ./GCSsetup.aux
 INPUT ./GCSsetup.aux
 INPUT GCSsetup.aux
+INPUT ./MissionPlanning.aux
+INPUT ./MissionPlanning.aux
+INPUT MissionPlanning.aux
+INPUT ./yourFirstFlight.aux
+INPUT ./yourFirstFlight.aux
+INPUT yourFirstFlight.aux
+INPUT ./GlobalPathplanning.aux
+INPUT ./GlobalPathplanning.aux
+INPUT GlobalPathplanning.aux
+INPUT ./Pathplanning.aux
+INPUT ./Pathplanning.aux
+INPUT Pathplanning.aux
 OUTPUT main.aux
 INPUT /home/inspection/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /home/inspection/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
@@ -468,12 +486,68 @@ INPUT ./Images/First wand .png
 INPUT ./Images/First wand .png
 INPUT ./Images/First wand .png
 INPUT ./Images/First wand .png
-INPUT ./GCSsetup.tex
-INPUT ./GCSsetup.tex
-OUTPUT GCSsetup.aux
-INPUT ./GCSsetup.tex
-INPUT ./GCSsetup.tex
-INPUT GCSsetup.tex
+INPUT ./theBigPicture.tex
+INPUT ./theBigPicture.tex
+OUTPUT theBigPicture.aux
+INPUT ./theBigPicture.tex
+INPUT ./theBigPicture.tex
+INPUT theBigPicture.tex
+INPUT ./Images/Comms Arch.png
+INPUT ./Images/Comms Arch.png
+INPUT ./Images/Comms Arch.png
+INPUT ./Images/Comms Arch.png
+INPUT ./Images/Comms Arch.png
+INPUT ./Images/Comms Arch.png
+INPUT ./Images/Comms Arch.png
+INPUT ./Images/Ground2Drone.png
+INPUT ./Images/Ground2Drone.png
+INPUT ./Images/Ground2Drone.png
+INPUT ./Images/Ground2Drone.png
+INPUT ./Images/Ground2Drone.png
+INPUT ./Images/Ground2Drone.png
+INPUT ./Images/Ground2Drone.png
+INPUT ./Images/GCS.png
+INPUT ./Images/GCS.png
+INPUT ./Images/GCS.png
+INPUT ./Images/GCS.png
+INPUT ./Images/GCS.png
+INPUT ./Images/GCS.png
+INPUT ./Images/GCS.png
+INPUT ./VICONsetup.tex
+INPUT ./VICONsetup.tex
+OUTPUT VICONsetup.aux
+INPUT ./VICONsetup.tex
+INPUT ./VICONsetup.tex
+INPUT VICONsetup.tex
+INPUT ./Images/Overall Hardware.png
+INPUT ./Images/Overall Hardware.png
+INPUT ./Images/Overall Hardware.png
+INPUT ./Images/Overall Hardware.png
+INPUT ./Images/Overall Hardware.png
+INPUT ./Images/Overall Hardware.png
+INPUT ./Images/Overall Hardware.png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15.jpeg
+INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecti1200.tfm
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17.jpeg
 INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0800.tfm
 INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm1000.tfm
 INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -481,6 +555,286 @@ INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/
 INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm0500.tfm
 INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0700.tfm
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (1).jpeg
+INPUT ./Images/NoiseGeneration.png
+INPUT ./Images/NoiseGeneration.png
+INPUT ./Images/NoiseGeneration.png
+INPUT ./Images/NoiseGeneration.png
+INPUT ./Images/NoiseGeneration.png
+INPUT ./Images/NoiseGeneration.png
+INPUT ./Images/NoiseGeneration.png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (1).jpeg
+INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm1095.tfm
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.05.02 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.17 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11 (2).png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11 (2).png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11 (2).png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11 (2).png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11 (2).png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11 (2).png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11 (2).png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (1).jpeg
+INPUT ./Images/Dance1.png
+INPUT ./Images/Dance1.png
+INPUT ./Images/Dance1.png
+INPUT ./Images/Dance1.png
+INPUT ./Images/Dance1.png
+INPUT ./Images/Dance1.png
+INPUT ./Images/Dance1.png
+INPUT ./Images/Dance2.png
+INPUT ./Images/Dance2.png
+INPUT ./Images/Dance2.png
+INPUT ./Images/Dance2.png
+INPUT ./Images/Dance2.png
+INPUT ./Images/Dance2.png
+INPUT ./Images/Dance2.png
+INPUT ./Images/Dance3.png
+INPUT ./Images/Dance3.png
+INPUT ./Images/Dance3.png
+INPUT ./Images/Dance3.png
+INPUT ./Images/Dance3.png
+INPUT ./Images/Dance3.png
+INPUT ./Images/Dance3.png
+INPUT ./Images/Dance4.png
+INPUT ./Images/Dance4.png
+INPUT ./Images/Dance4.png
+INPUT ./Images/Dance4.png
+INPUT ./Images/Dance4.png
+INPUT ./Images/Dance4.png
+INPUT ./Images/Dance4.png
+INPUT ./Images/Dance5.png
+INPUT ./Images/Dance5.png
+INPUT ./Images/Dance5.png
+INPUT ./Images/Dance5.png
+INPUT ./Images/Dance5.png
+INPUT ./Images/Dance5.png
+INPUT ./Images/Dance5.png
+INPUT ./Images/Dance6.png
+INPUT ./Images/Dance6.png
+INPUT ./Images/Dance6.png
+INPUT ./Images/Dance6.png
+INPUT ./Images/Dance6.png
+INPUT ./Images/Dance6.png
+INPUT ./Images/Dance6.png
+INPUT ./Images/Dance7.png
+INPUT ./Images/Dance7.png
+INPUT ./Images/Dance7.png
+INPUT ./Images/Dance7.png
+INPUT ./Images/Dance7.png
+INPUT ./Images/Dance7.png
+INPUT ./Images/Dance7.png
+INPUT ./Images/Dance8.png
+INPUT ./Images/Dance8.png
+INPUT ./Images/Dance8.png
+INPUT ./Images/Dance8.png
+INPUT ./Images/Dance8.png
+INPUT ./Images/Dance8.png
+INPUT ./Images/Dance8.png
+INPUT ./Images/Small Camera light on.jpeg
+INPUT ./Images/Small Camera light on.jpeg
+INPUT ./Images/Small Camera light on.jpeg
+INPUT ./Images/Small Camera light on.jpeg
+INPUT ./Images/Small Camera light on.jpeg
+INPUT ./Images/Small Camera light on.jpeg
+INPUT ./Images/Small Camera light on.jpeg
+INPUT ./Images/Big Camera light on.jpeg
+INPUT ./Images/Big Camera light on.jpeg
+INPUT ./Images/Big Camera light on.jpeg
+INPUT ./Images/Big Camera light on.jpeg
+INPUT ./Images/Big Camera light on.jpeg
+INPUT ./Images/Big Camera light on.jpeg
+INPUT ./Images/Big Camera light on.jpeg
+INPUT ./Images/Big Camera calibrating.jpeg
+INPUT ./Images/Big Camera calibrating.jpeg
+INPUT ./Images/Big Camera calibrating.jpeg
+INPUT ./Images/Big Camera calibrating.jpeg
+INPUT ./Images/Big Camera calibrating.jpeg
+INPUT ./Images/Big Camera calibrating.jpeg
+INPUT ./Images/Big Camera calibrating.jpeg
+INPUT ./Images/Small Camera calibrating.jpeg
+INPUT ./Images/Small Camera calibrating.jpeg
+INPUT ./Images/Small Camera calibrating.jpeg
+INPUT ./Images/Small Camera calibrating.jpeg
+INPUT ./Images/Small Camera calibrating.jpeg
+INPUT ./Images/Small Camera calibrating.jpeg
+INPUT ./Images/Small Camera calibrating.jpeg
+INPUT ./Images/Big Camera Calibrated.jpeg
+INPUT ./Images/Big Camera Calibrated.jpeg
+INPUT ./Images/Big Camera Calibrated.jpeg
+INPUT ./Images/Big Camera Calibrated.jpeg
+INPUT ./Images/Big Camera Calibrated.jpeg
+INPUT ./Images/Big Camera Calibrated.jpeg
+INPUT ./Images/Big Camera Calibrated.jpeg
+INPUT ./Images/Small Camera Calibrated.jpeg
+INPUT ./Images/Small Camera Calibrated.jpeg
+INPUT ./Images/Small Camera Calibrated.jpeg
+INPUT ./Images/Small Camera Calibrated.jpeg
+INPUT ./Images/Small Camera Calibrated.jpeg
+INPUT ./Images/Small Camera Calibrated.jpeg
+INPUT ./Images/Small Camera Calibrated.jpeg
+INPUT ./Images/8.75 Calibrating Camera.png
+INPUT ./Images/8.75 Calibrating Camera.png
+INPUT ./Images/8.75 Calibrating Camera.png
+INPUT ./Images/8.75 Calibrating Camera.png
+INPUT ./Images/8.75 Calibrating Camera.png
+INPUT ./Images/8.75 Calibrating Camera.png
+INPUT ./Images/8.75 Calibrating Camera.png
+INPUT ./Images/Bad vs good camera calibration.png
+INPUT ./Images/Bad vs good camera calibration.png
+INPUT ./Images/Bad vs good camera calibration.png
+INPUT ./Images/Bad vs good camera calibration.png
+INPUT ./Images/Bad vs good camera calibration.png
+INPUT ./Images/Bad vs good camera calibration.png
+INPUT ./Images/Bad vs good camera calibration.png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.11.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.09.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.12 (2).jpeg
+INPUT ./Images/Direction convention of Vicon Calibration Wand.png
+INPUT ./Images/Direction convention of Vicon Calibration Wand.png
+INPUT ./Images/Direction convention of Vicon Calibration Wand.png
+INPUT ./Images/Direction convention of Vicon Calibration Wand.png
+INPUT ./Images/Direction convention of Vicon Calibration Wand.png
+INPUT ./Images/Direction convention of Vicon Calibration Wand.png
+INPUT ./Images/Direction convention of Vicon Calibration Wand.png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.19 (1).jpeg
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.13 (2).jpeg
+INPUT ./Images/11 Objects and selecting objects.png
+INPUT ./Images/11 Objects and selecting objects.png
+INPUT ./Images/11 Objects and selecting objects.png
+INPUT ./Images/11 Objects and selecting objects.png
+INPUT ./Images/11 Objects and selecting objects.png
+INPUT ./Images/11 Objects and selecting objects.png
+INPUT ./Images/11 Objects and selecting objects.png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.15 (3).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.16.jpeg
+INPUT ./Images/13 Alt click to track object.png
+INPUT ./Images/13 Alt click to track object.png
+INPUT ./Images/13 Alt click to track object.png
+INPUT ./Images/13 Alt click to track object.png
+INPUT ./Images/13 Alt click to track object.png
+INPUT ./Images/13 Alt click to track object.png
+INPUT ./Images/13 Alt click to track object.png
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg
+INPUT ./Images/WhatsApp Image 2026-02-24 at 19.06.18 (2).jpeg
+INPUT ./Images/17 Shared saving.png
+INPUT ./Images/17 Shared saving.png
+INPUT ./Images/17 Shared saving.png
+INPUT ./Images/17 Shared saving.png
+INPUT ./Images/17 Shared saving.png
+INPUT ./Images/17 Shared saving.png
+INPUT ./Images/17 Shared saving.png
+INPUT ./Images/16 Save your object.png
+INPUT ./Images/16 Save your object.png
+INPUT ./Images/16 Save your object.png
+INPUT ./Images/16 Save your object.png
+INPUT ./Images/16 Save your object.png
+INPUT ./Images/16 Save your object.png
+INPUT ./Images/16 Save your object.png
+INPUT ./GCSsetup.tex
+INPUT ./GCSsetup.tex
+OUTPUT GCSsetup.aux
+INPUT ./GCSsetup.tex
+INPUT ./GCSsetup.tex
+INPUT GCSsetup.tex
 INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecbx1000.tfm
 INPUT ./Images/Hardware Requirements.png
 INPUT ./Images/Hardware Requirements.png
@@ -489,7 +843,6 @@ INPUT ./Images/Hardware Requirements.png
 INPUT ./Images/Hardware Requirements.png
 INPUT ./Images/Hardware Requirements.png
 INPUT ./Images/Hardware Requirements.png
-INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ectt1200.tfm
 INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ectt1095.tfm
 INPUT ./Images/VirtualEnvironment/One.png
@@ -626,7 +979,6 @@ INPUT ./Images/VirtualEnvironment/Seven.png
 INPUT ./Images/VirtualEnvironment/Seven.png
 INPUT ./Images/VirtualEnvironment/Seven.png
 INPUT ./Images/VirtualEnvironment/Seven.png
-INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm1095.tfm
 INPUT ./Images/mavproxy11.png
 INPUT ./Images/mavproxy11.png
 INPUT ./Images/mavproxy11.png
@@ -676,31 +1028,236 @@ INPUT ./Images/network5.png
 INPUT ./Images/network5.png
 INPUT ./Images/network5.png
 INPUT ./Images/network5.png
+INPUT ./MissionPlanning.tex
+INPUT ./MissionPlanning.tex
+OUTPUT MissionPlanning.aux
+INPUT ./MissionPlanning.tex
+INPUT ./MissionPlanning.tex
+INPUT MissionPlanning.tex
+INPUT ./Images/Hardware Requirements Drone.png
+INPUT ./Images/Hardware Requirements Drone.png
+INPUT ./Images/Hardware Requirements Drone.png
+INPUT ./Images/Hardware Requirements Drone.png
+INPUT ./Images/Hardware Requirements Drone.png
+INPUT ./Images/Hardware Requirements Drone.png
+INPUT ./Images/Hardware Requirements Drone.png
+INPUT ./Images/PinoutGood.png
+INPUT ./Images/PinoutGood.png
+INPUT ./Images/PinoutGood.png
+INPUT ./Images/PinoutGood.png
+INPUT ./Images/PinoutGood.png
+INPUT ./Images/PinoutGood.png
+INPUT ./Images/PinoutGood.png
+INPUT ./Images/Wifi1.png
+INPUT ./Images/Wifi1.png
+INPUT ./Images/Wifi1.png
+INPUT ./Images/Wifi1.png
+INPUT ./Images/Wifi1.png
+INPUT ./Images/Wifi1.png
+INPUT ./Images/Wifi1.png
+INPUT ./Images/Wifi3.png
+INPUT ./Images/Wifi3.png
+INPUT ./Images/Wifi3.png
+INPUT ./Images/Wifi3.png
+INPUT ./Images/Wifi3.png
+INPUT ./Images/Wifi3.png
+INPUT ./Images/Wifi3.png
+INPUT ./Images/Wifi4.png
+INPUT ./Images/Wifi4.png
+INPUT ./Images/Wifi4.png
+INPUT ./Images/Wifi4.png
+INPUT ./Images/Wifi4.png
+INPUT ./Images/Wifi4.png
+INPUT ./Images/Wifi4.png
+INPUT ./Images/Wifi6.png
+INPUT ./Images/Wifi6.png
+INPUT ./Images/Wifi6.png
+INPUT ./Images/Wifi6.png
+INPUT ./Images/Wifi6.png
+INPUT ./Images/Wifi6.png
+INPUT ./Images/Wifi6.png
+INPUT ./Images/Wifi7.png
+INPUT ./Images/Wifi7.png
+INPUT ./Images/Wifi7.png
+INPUT ./Images/Wifi7.png
+INPUT ./Images/Wifi7.png
+INPUT ./Images/Wifi7.png
+INPUT ./Images/Wifi7.png
+INPUT ./Images/Wifi9.png
+INPUT ./Images/Wifi9.png
+INPUT ./Images/Wifi9.png
+INPUT ./Images/Wifi9.png
+INPUT ./Images/Wifi9.png
+INPUT ./Images/Wifi9.png
+INPUT ./Images/Wifi9.png
+INPUT ./Images/Mission0.jpg
+INPUT ./Images/Mission0.jpg
+INPUT ./Images/Mission0.jpg
+INPUT ./Images/Mission0.jpg
+INPUT ./Images/Mission0.jpg
+INPUT ./Images/Mission0.jpg
+INPUT ./Images/Mission0.jpg
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission2.png
+INPUT ./Images/Mission2.png
+INPUT ./Images/Mission2.png
+INPUT ./Images/Mission2.png
+INPUT ./Images/Mission2.png
+INPUT ./Images/Mission2.png
+INPUT ./Images/Mission2.png
+INPUT ./Images/Mission3.png
+INPUT ./Images/Mission3.png
+INPUT ./Images/Mission3.png
+INPUT ./Images/Mission3.png
+INPUT ./Images/Mission3.png
+INPUT ./Images/Mission3.png
+INPUT ./Images/Mission3.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission1.png
+INPUT ./Images/Mission5.png
+INPUT ./Images/Mission5.png
+INPUT ./Images/Mission5.png
+INPUT ./Images/Mission5.png
+INPUT ./Images/Mission5.png
+INPUT ./Images/Mission5.png
+INPUT ./Images/Mission5.png
+INPUT ./Images/Mission6.png
+INPUT ./Images/Mission6.png
+INPUT ./Images/Mission6.png
+INPUT ./Images/Mission6.png
+INPUT ./Images/Mission6.png
+INPUT ./Images/Mission6.png
+INPUT ./Images/Mission6.png
+INPUT ./Images/GCSTelem3.png
+INPUT ./Images/GCSTelem3.png
+INPUT ./Images/GCSTelem3.png
+INPUT ./Images/GCSTelem3.png
+INPUT ./Images/GCSTelem3.png
+INPUT ./Images/GCSTelem3.png
+INPUT ./Images/GCSTelem3.png
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/DSC05445.JPG
+INPUT ./Images/NameChange1.png
+INPUT ./Images/NameChange1.png
+INPUT ./Images/NameChange1.png
+INPUT ./Images/NameChange1.png
+INPUT ./Images/NameChange1.png
+INPUT ./Images/NameChange1.png
+INPUT ./Images/NameChange1.png
+INPUT ./Images/NameChange2.png
+INPUT ./Images/NameChange2.png
+INPUT ./Images/NameChange2.png
+INPUT ./Images/NameChange2.png
+INPUT ./Images/NameChange2.png
+INPUT ./Images/NameChange2.png
+INPUT ./Images/NameChange2.png
+INPUT ./Images/Works2.png
+INPUT ./Images/Works2.png
+INPUT ./Images/Works2.png
+INPUT ./Images/Works2.png
+INPUT ./Images/Works2.png
+INPUT ./Images/Works2.png
+INPUT ./Images/Works2.png
+INPUT ./Images/Works1.png
+INPUT ./Images/Works1.png
+INPUT ./Images/Works1.png
+INPUT ./Images/Works1.png
+INPUT ./Images/Works1.png
+INPUT ./Images/Works1.png
+INPUT ./Images/Works1.png
+INPUT ./yourFirstFlight.tex
+INPUT ./yourFirstFlight.tex
+OUTPUT yourFirstFlight.aux
+INPUT ./yourFirstFlight.tex
+INPUT ./yourFirstFlight.tex
+INPUT yourFirstFlight.tex
+INPUT ./GlobalPathplanning.tex
+INPUT ./GlobalPathplanning.tex
+OUTPUT GlobalPathplanning.aux
+INPUT ./GlobalPathplanning.tex
+INPUT ./GlobalPathplanning.tex
+INPUT GlobalPathplanning.tex
+INPUT ./Images/coord transfrom.png
+INPUT ./Images/coord transfrom.png
+INPUT ./Images/coord transfrom.png
+INPUT ./Images/coord transfrom.png
+INPUT ./Images/coord transfrom.png
+INPUT ./Images/coord transfrom.png
+INPUT ./Images/coord transfrom.png
+INPUT ./Images/Waypoints.png
+INPUT ./Images/Waypoints.png
+INPUT ./Images/Waypoints.png
+INPUT ./Images/Waypoints.png
+INPUT ./Images/Waypoints.png
+INPUT ./Images/Waypoints.png
+INPUT ./Images/Waypoints.png
+INPUT ./Pathplanning.tex
+INPUT ./Pathplanning.tex
+OUTPUT Pathplanning.aux
+INPUT ./Pathplanning.tex
+INPUT ./Pathplanning.tex
+INPUT Pathplanning.tex
+INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tctt1200.tfm
+INPUT /home/inspection/.miktex/texmfs/install/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
 INPUT main.aux
+INPUT ./theBigPicture.aux
+INPUT ./theBigPicture.aux
+INPUT theBigPicture.aux
+INPUT ./VICONsetup.aux
+INPUT ./VICONsetup.aux
+INPUT VICONsetup.aux
 INPUT ./GCSsetup.aux
 INPUT ./GCSsetup.aux
 INPUT GCSsetup.aux
+INPUT ./MissionPlanning.aux
+INPUT ./MissionPlanning.aux
+INPUT MissionPlanning.aux
+INPUT ./yourFirstFlight.aux
+INPUT ./yourFirstFlight.aux
+INPUT yourFirstFlight.aux
+INPUT ./GlobalPathplanning.aux
+INPUT ./GlobalPathplanning.aux
+INPUT GlobalPathplanning.aux
+INPUT ./Pathplanning.aux
+INPUT ./Pathplanning.aux
+INPUT Pathplanning.aux
 INPUT ./main.out
 INPUT ./main.out
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tctt1200.pk
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tctt1200.pk
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tctt1095.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tctt1095.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk
-INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk
-INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk
-INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1200.pk
-INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1200.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1200.pk
+INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1200.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk
@@ -715,5 +1272,11 @@ INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ec
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm2074.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2074.pk
 INPUT /home/inspection/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2074.pk
+INPUT /home/inspection/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /home/inspection/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /home/inspection/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /home/inspection/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /home/inspection/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /home/inspection/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /home/inspection/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /home/inspection/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb

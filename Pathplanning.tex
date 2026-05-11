@@ -1,10 +1,10 @@
-\section{MAVLink-Based Position Control in Guided Mode}
+\section{Pathplanning - Nura Efendic}
+\label{sec:Pathplanning}
 
 \subsection{Overview}
+From the above, we have established how to connect to the MAVLink stream, how to arm the vehicle, how to takeoff, and how to send local position commands. This section will focus on how you can customize pathplanning and imperatively intergration towards your own designed algorithm. The content of this section is based on the MAVLink documentation for guided mode,which enables external programs to command the drone's motion in real time.
 
-MAVLink (Micro Air Vehicle Link) is a lightweight communication protocol used for interaction between a ground control system and an autopilot. In guided flight modes (e.g., \texttt{GUIDED} in ArduPilot), MAVLink enables external programs to command the vehicle’s motion in real time.
-
-A common approach for precise control, especially in indoor or GPS-denied environments, is to use \textbf{local position control} rather than global GPS coordinates. This is achieved using the \texttt{LOCAL\_NED} reference frame and corresponding MAVLink messages.
+Instead of using global coordinates like above, local position control can also be used. Tj common approach for precise control, especially in indoor or GPS-denied environments, is to use \textbf{local position control} rather than global GPS coordinates. This is achieved using the \texttt{LOCAL\_NED} reference frame and corresponding MAVLink messages.
 
 \subsection{LOCAL\_NED Coordinate Frame}
 
@@ -503,3 +503,4 @@ A detailed description of MAVLink commands in guided mode can be found in the of
 \begin{center}
 \texttt{https://ardupilot.org/dev/docs/copter-commands-in-guided-mode.html}
 \end{center}
+

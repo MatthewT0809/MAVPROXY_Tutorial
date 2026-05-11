@@ -6,3 +6,39 @@ Also check if your drone is on origin and is all 0 0 0
 Also check if your drone is heading is correct. 
 
 Start with stablize mode, and then go towards alt hold, and go towards loiter mode, ensure your heading is the same as your mental orientation. 
+
+everal fundamental lessons were identified from the development of localisation sub-
+system. Most of these are heuristic operational lessons, which arises from test flight development in
+correlation from path planning and hardware subsystems.
+First lesson concerns the configuration of Vicon IR markers. Marker arrangements should not resemble
+those of other drones operating in the same environment. A crash occurred when two marker configu-
+rations were too similar, causing Vicon to switch tracking between the objects mid flight. This resulted
+in the drone unexpectedly accelerating in an unintended direction during an automated mission. (For
+reference, an image of the crash is shown in figure 6.14.) To mitigate this, ensure your geometric as-
+sortment of your IR markers are dissimilar for drones that are flying concurrently. Additionally, it is
+good practice to deselect unused tracked objects within the Vicon Tracker to minimise the risk of false
+positives.
+The use of RTL and land functions in Mission Planner is not recommended for usage when integrating
+with path planning, especially during auto or guided missions. A near crash occurred due to incorrect
+RTL configuration, which when activated, maintained a 2m altitude above ground level as a failsafe op-
+tion. Given that the ceiling of the test environment begins at around 1.5m, this required pilot interference
+to prevent a crash.
+Another lesson relates to drone alignment during calibration. On one occasion, the backup pilot forgot
+to align the drone with the coordinate system defined in Vicon, causing the flight controller to apply
+corrective actions in the wrong direction and resulting in an immediate flip on takeoff. Ensuring that
+78 6. Results
+the flight controller’s front faces the north of the Vicon coordinate system is essential.
+Copying PID tuning parameters between different aircraft is also inherently dangerous and a lesson
+learnt. A crash occurred when PID values from the Surveyor were applied to the Inspector, despite the
+two platforms having different hardware characteristics, resulting in a run-off flight.
+Waypoint speed configuration is another critical parameter. A severe tilt towards the next waypoint
+occurred due to a mistakenly set waypoint speed of 10 m/s, which would have resulted in a crash without
+pilot intervention. This parameter must always be verified before flight.
+Securing wiring for the ESP WiFi module is essential. Although loose wiring did not cause failures
+during flight, there were several close calls during pre‑flight configuration. Flight‑critical connections
+should always be secured, for example using hot glue, to ensure reliability.
+Finally, the importance of the pilot’s mental image with yaw alignment during flight testing cannot be
+overstated. The drone’s front should always face the same direction as the pilot’s eyes. It is in the nature
+of experimental flight testing that the drone may behave unpredictably. A drone displaced 90 degrees
+in yaw can lead to incorrect corrective inputs during split seconds decision, increasing the risk of a pilot
+induced crash

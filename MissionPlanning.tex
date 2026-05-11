@@ -1,124 +1,137 @@
 \section{Drone Setup}
-In this section, things tends to be my bespoke and my instructions will start to become more arbitary and generalised as the configuration differs for each drone. To appericate the process, this section provides a working list of a functional commmunication way of working. 
+In this section, things tends to be more bespoke and my instructions will start to become more arbitary and generalised as the configuration differs for each drone. To appericate the process however, this section provides a working example of a functional commmunication link with the highlighted components used.  
 
-\subsection{Hardware Required}
-You will need an ESP8266 Wifi Module, a Pixhawk6C, a Radio Controller, IR Markers, and of course, your drone. You need to setup your drone so that you can host a wifi network for your ground control station to connect to. I used an ESP8266 wifi chip for this, althought you are more than welcome (encouraged even) to explore using host wifi features from raspberry pi, which is known to be more stable than the ESP8266. \cite{grace}\\
+\label{sec:hostport}
+In this guide, an ESP8266 Wifi Module \footnote{ESP8266 is reported to have connection issues in swarms, use raspberry pi if doing swarm flights.}, a Pixhawk6C flight controller\footnote{You are more than welcome (encouraged even) to explore using host wifi features from raspberry pi, which I have been told to be more stable than the ESP8266.}\footnote{Do note that not all Pixhawk works the same when setting this up, I have had no success with older versions of Radiolink Pixhawk with this configuration, also I have not tried this with PX4.}, a Radio Controller/Reciever configuration, IR Markers, and a custom drone is used. A photo of the configuration is shown in figure \ref{fig:HardwareRequirements} below:
 
-The flight controller I am using is the Pixhawk 6C, do note that not all Pixhawk works the same when setting up the serial port, so this is just an arbitary example given that works. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Hardware Requirements Drone.png}
     \caption{Hardware Required.}
-    \label{fig:placeholder2}
+    \label{fig:HardwareRequirements}
 \end{figure}
 
-\subsection{ESP8266 to PixHawk6C}
-\label{sec:hostport}
-The ESP8266 to Pixhawk pinout is as follows:
+The pinout connection between the wifi module and the flight controller is as follows:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{Images/PinoutGood.png}
     \caption{Pinout from Pixhawk 6c to ESP8266.}
-    \label{fig:placeholder2}
 \end{figure}
-
-Power up the Pixhawk (Remove the propellers). If the ESP8266 is being used for the 1st time, please see \cite{engineeringprojects_esp8266} for setting up wifi name and password. \textbf{(If you are using the drone after the 2025/2026 cohort, it is named as Inspector/Surveyour with password being inspector/surveyor correspondingly)}. Connect your GCS to the wifi as shown in figure \ref{fig:wifi1}
+\subsection{Setting up the ESP8266}
+To set up the ESP8266, power up the Pixhawk (Remove the propellers). \footnote{If the ESP8266 is being used for the 1st time, please see \cite{engineeringprojects_esp8266} for setting up wifi name and password.} \footnote{If you are using the drone after the 2025/2026 cohort, it is named as Inspector/Surveyour with password being inspector/surveyor correspondingly} and connect your GCS to the wifi being hosted by the ESP8266. The wifi connection should be just a conventional wifi network as shown in figure \ref{fig:wifi1}. Connect to it and enter the password like a normal wifi network.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Images/Wifi1.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \includegraphics[width=0.8\linewidth]{Images/Wifi1.png}
+    \caption{Wifi Network Hosted by ESP8266.}
     \label{fig:wifi1}
 \end{figure}
-Open your wifi setting as shown in \ref{fig:wifi3}: 
+
+Once you are connected to the WiFi, you need to find out the IP address of the WiFi network, this is known by going into the wifi settings in \ref{fig:wifi3}: 
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Images/Wifi3.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \includegraphics[width=0.8\linewidth]{Images/Wifi3.png}
+    \caption{WiFi Settings.}
     \label{fig:wifi3}
 \end{figure}
+
 Note down the WiFi's Default Route as seen in figure \ref{fig:wifi4}: 
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Wifi4.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{Default Route of the Wifi Network.}
     \label{fig:wifi4}
 \end{figure}
 
-Enter the wifi's default route into a browser, you should see a page as shown in figure \ref{fig:wifi6} below:
+
+Enter the WiFi's default route into a browser, you should see a page as shown in figure \ref{fig:wifi6} below:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Wifi6.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{ESP8266 Configuration Page.}
     \label{fig:wifi6}
 \end{figure}
-Press \textit{Setup}, change your wifi SSID and password as you wish. Noting your host port's digit for later, as shown in figure \ref{fig:wifi7} 
+
+Press \textit{Setup}, change your wifi SSID and password as you wish. Noting your host port's digit for later, as shown in figure \ref{fig:wifi7}: 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Wifi7.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{SSID and Password Setup}
     \label{fig:wifi7}
 \end{figure}
+
 Return to the home page, and press \textit{Reboot}, as shown in \ref{fig:wifi9}: 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Wifi9.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{Saving and rebooting the ESP8266.}
     \label{fig:wifi9}
 \end{figure}
-You now have a link between the ESP module and your GCS. Next, you now need to configure the Pixhawk so that it is compatable with the wifi module.  
+The ESP8266 is now configured. You now need to configure the Pixhawk so that it is compatible with the wifi module, this is done by using MissionPlanner, which is covered in the next subsection.
 
 \subsection{MissionPlanner Configuration}
-Connect the usb-c port of the Pixhawk6C to a copmuter as shown in figure \ref{fig:mission0} below:
+Connect the usb-c port of the Pixhawk6C to a computer as shown in figure \ref{fig:mission0} below:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Mission0.jpg}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{Connecting Pixhawk6C to Computer.}
     \label{fig:mission0}
 \end{figure}
 
-Download MissionPlanner \cite{missionplanner_installation}. Open missionplanner and connect to the drone as seen in figure \ref{fig:mission1}:
+Download MissionPlanner in \cite{missionplanner_installation} and open it. On the top right corner of the welcome screen, select \textit{AUTO} and press \textit{Connect} as seen in figure \ref{fig:mission1}:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Mission1.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{Connecting to the Drone with MissionPlanner.}
     \label{fig:mission1}
 \end{figure}
-On the top left, press \textit{Config}, then press \textit{Full Parameter List} shown on the left side panel, a warning will show up, press \textit{OK}, as seen below in figure \ref{fig:mission2}:
+Once entered, align your focus to the top left portion of the app. Press \textit{Config}, then press \textit{Full Parameter List} shown on the left side panel, a warning will show up, press \textit{OK}, as seen below in figure \ref{fig:mission2}:
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Mission2.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{Navigating to full Parameter List.}
     \label{fig:mission2}
 \end{figure}
 Search for \textit{AHRS EKF TYPE 3} in the searchbox on the right panel, then change the value of it to \textit{3}, press \textit{Write Params} on the right panel, as seen below in figure \ref{fig:mission3}:
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Mission3.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{Changing the AHRS EKF TYPE Parameter.}
     \label{fig:mission3}
 \end{figure}
 A window will pop up asking for confrimation, click \textit{Yes} as shown in figure \ref{fig:mission4}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Mission1.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{Confirming the Parameter Change.}
     \label{fig:mission4}
 \end{figure}
+\begin{figure}[H]
+\centering
+\begin{minipage}[t]{0.55\textwidth}
+
 Once confirmed, the value is now saved to the Pixhawk6c flight controller, a confirmation message will be shown like figure \ref{fig:mission5}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{Images/Mission5.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \includegraphics[width=1\linewidth]{Images/Mission5.png}
+    \caption{Confirmation of Parameter Change.}
     \label{fig:mission5}
 \end{figure}
-Please also rewrite the all the variables shown in table \ref{tab:table}. 
-\begin{table}[h!]
-\centering
-\caption{Configured ArduPilot Parameters}
-\label{tab:table}   
+\raggedright Using the same process, please also rewrite all the variables shown in table \ref{tab:table} on the right. These parameters are all related to the Extended Kalman Filter (EKF) and GPS configuration, which is important for the drone to be able to use the Vicon data as a source of position estimation.\\
+
+\vspace{0.2cm}
+
+\raggedright Once all the parameters are saved, head towards \textit{SETUP}, \textit{Flight Modes}, you should navigate to a screen as shown in figure \ref{fig:mission6}.
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.40\textwidth}
+  \begin{table}[H]
+\centering 
 \begin{tabular}{l l}
 \hline
 \textbf{Parameter} & \textbf{Value} \\
@@ -143,53 +156,36 @@ COMPASS\_USE3 & 0 \\
 \hline
 \end{tabular}
 \end{table}
+\caption{\raggedright Configured ArduPilot Parameters}
+\label{tab:table}  
+\end{minipage}
+\end{figure}
 
-
-Head towards \textit{SETUP}, \textit{Flight Modes}, you should navigate to a screen as shown in figure \ref{fig:mission6}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Mission6.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \caption{Setting up Flight Modes.}
     \label{fig:mission6}
 \end{figure}
 
-Change the Flight Modes 1, 4, 6 into \textit{Stablize}, \textit{Alt Hold}, and \textit{Loiter}; Press \textit{Save Modes} to save your edits afterwards. Here I am using radio channel 5 on my transmitter, which corresponds to a 3 way switch, as my safety switch between Vicon indepedent flight mode to Vicon dependant flight mode,more information about the modes in section below.
-
-\vspace{0.4cm} 
-
-There is a general assumption here that you understand how to bind the transmitter to the recievers and how to map a switch into a flight mode. No worries if you don't know, there are plenty of Youtube tutorial that should cover this.
-
+Change the Flight Modes 1, 4, 6 into \textit{Stablize}, \textit{Alt Hold}, and \textit{Loiter}; Press \textit{Save Modes} to save your edits afterwards. Here I am using radio channel 5 on my transmitter, which corresponds to a 3 way switch as my safety switch between Vicon indepedent flight mode and Vicon dependant flight mode. 
 
 \subsection{Mavproxy Telemetry}
-Now, Ardupilot is configured, return to the GCS and test if you recieve telemetry from your GCS!
-
-Remeber to select the ESP8266 Wifi Network as shown in figure \ref{fig:GCST1}.
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Images/GCSTelem1.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
-    \label{fig:GCST1}
-\end{figure}
-
-
-Go to the GCS and type in the following: 
+To test if the telemetry communication link is working, return to the GCS and type in the mavproxy command (Remeber to select the ESP8266 Wifi Network). If successful, telemetry should start showing up like figure \ref{fig:GCST3}.
 
 \begin{lstlisting}
-    mavproxy.py --master :14554 --console --map
+    mavproxy.py --master :14554[Replace with your port number here] --console --map
 \end{lstlisting}
 
-Recalling the Host Port number from section \ref{fig:wifi6}, replace 14554 with the number of your port. If successfully, telemetry should start showing up like figure \ref{fig:GCST3}, horray!
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Images/GCSTelem3.png}
-    \caption{Pinout from Pixhawk 6c to ESP8266.}
+    \includegraphics[width=0.8\linewidth]{Images/GCSTelem3.png}
+    \caption{Telemetry Data Showing up in Mavproxy Console.}
     \label{fig:GCST3}
 \end{figure}
-
+Recalling the Host Port number from before in figure \ref{fig:wifi6}, make sure to replace 14554 with the number of your port. 
 \subsection{IR Markers}
-Now your GCS connetions are all done, we are moving towards the final minors steps before actually flying the drone with VICON! Mount the IR markers with hot glue on location of your drones that is easily seen by the cameras. Have at least 4+ per drone and place them in an assymptical arragement, an example is shown in figure \ref{fig:irmarkers} below:  
+Now your GCS connetions are all done, we are moving towards the final  steps before actually flying the drone with VICON! Mount the IR markers with hot glue on location of your drones that is easily seen by the cameras. Have at least 4+ per drone and place them in an assymptical arragement, an example is shown in figure \ref{fig:irmarkers} below:  
 
 \begin{figure}[H]
     \centering
@@ -200,37 +196,34 @@ Now your GCS connetions are all done, we are moving towards the final minors ste
 
 If you are flying more than 1 drone, your assortment of IR markers must be geometrically different, otherwise the Vicon System may mistake the wrong object to track. (This has happened to me before and caused a crash.) 
 
-
-\subsection{GCS to Vicon}
+\subsection{Final Intergration}
 Finally, let's test the overall system. Plug in your GCS to the Vicon ethernet port as seen in figure \ref{fig:hardware}, connect the GCS laptop to the ESP8266's wifi, and place your drone inside the flight arena. \\
-\vspace{0.4cm}
+\vspace{0.2cm}
 Setup the Vicon system by following section \ref{sec:viconsetup} above. This includes turning on the cameras, creating a mask, calibrating cameras, setting the origin, and define your now ready to go drone as a new object in section \ref{sec:defineNewObject}. \\
-
-\vspace{0.5cm} 
-
-One last thing, we must let pyvicon know the name of the object so it knows which object to track. To do this, go to GCS's \textit{Files} app, and navigate to \textit{/Home/.local/lib/python3.x/site-packages/MAVProxy/modules} and open the file named \textit{mavproxy\_vicon.py}, as shown in figure \ref{fig:NC1}:
+\vspace{0.2cm} 
+One last thing, we must let pyvicon know the name of the object so it knows which object to track. To do this, go into the to GCS's venv, and navigate to \textit{~/miniconda3/envs/VICON/lib/python3.1/site-packages/MAVProxy} and open the file named \textit{mavproxy\_vicon.py}, as shown in figure \ref{fig:NC1}:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/NameChange1.png}
-    \caption{Example of Drone IR Markers layout.}
+    \caption{Location of mavproxy\_vicon.py.}
     \label{fig:NC1}
 \end{figure}
 
-If \textit{.local} can't be found on \textit{Home}, you can \textit{Show Hidden File} by pressing the button with 3 bars on top right. as shown in figure below:
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Images/NameChange3.png}
-    \caption{Example of Drone IR Markers layout.}
-    \label{fig:irmarkers}
-\end{figure}
+% If \textit{.local} can't be found on \textit{Home}, you can \textit{Show Hidden File} by pressing the button with 3 bars on top right. as shown in figure below:
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=1\linewidth]{Images/NameChange3.png}
+%     \caption{Example of Drone IR Markers layout.}
+%     \label{fig:irmarkers}
+% \end{figure}
 
-Align your focus on line 29 to 36, and change \textit{(origin\_lat)(origin\_lon)(origin\_alt)} to 0. \textit{(object\_name)} as your object name. Here, \textit{MATT\_INSPECTOR} is the name of my drone as defined within the Vicon Host PC, and the origin lat lon and alt refers to the position of the Vicon Origin as (0,0,0). This comes important later on when conducting pathplanning, otherwise your drone might fly to Australia :). Make sure to save the changes from pressing \textit{Save} on top right as shown below in figure \ref{fig:NC2}. 
+Align your focus on line 29 to 36, and change \textit{(origin\_lat)(origin\_lon)(origin\_alt)} to 0 (Otherwise your drone will fly towards Australia, where the origin is defaulted at the glorious Canberra Model Aircraft Club Flying Field), \textit{(object\_name)} as your object name. (Here, \textit{MATT\_INSPECTOR} is the name of my drone as defined within the Vicon Host PC). Press \textit{Save} on top right to save, as shown below in figure \ref{fig:NC2}. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/NameChange2.png}
-    \caption{Example of Drone IR Markers layout.}
+    \caption{Changing the origin and object name inside mavproxy\_vicon.py.}
     \label{fig:NC2}
 \end{figure}
 
@@ -258,18 +251,17 @@ You should have the same results as figure \ref{fig:Works1}. A good way to verif
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{Images/Works2.png}
-    \caption{Example of Drone IR Markers layout.}
+    \caption{Expected outputs of activating mavproxy.py}
     \label{fig:Works1}
 \end{figure}
 
-If everything is working well, within the console, you should see the the NED (North East Down) and Euler angles (Roll Pitch Yaw) of your drone - Yippeee! \footnote{When console mentions height is at -12, this is referring a 12cm offset from the bottom to the center of the drone. As the position of the drone is defined as the geometric center of the assortment of IR markers you placed, this offset makes geometric sense.}
+If everything is working well, within the console, you should see the the NED (North East Down) and Euler angles (Roll Pitch Yaw) of your drone - Yippeee! 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{Images/Works1.png}
-    \caption{Example of Drone IR Markers layout.}
-    \label{fig:NC2}
+    \caption{Correct console information.}
 \end{figure}
-
+When console mentions height is at -12 while your drone is on the ground, this is referring a 12cm offset from the bottom to the center of the drone. The position of the drone is defined as the geometric center of the assortment of IR markers you placed.
 \subsection{Finishing}
-From this section, we have managed to merge the Vicon System, the GCS system you developed, and the drones that we prepared. We now have a working architecture that feeds Vicon postional data to the drone via the GCS. This is splendid and we are now ready for test flights!
+From this section, we have managed to merge our understanding with the operation Vicon System, the GCS system you developed, and the drones that we prepared. We now have a working architecture that feeds Vicon postional data to the drone via the GCS. This is splendid and we are now ready for test flights! Congratulations and well done on makign it this far! The next section will be about your first flight, and how to use the Vicon data to fly the drone.
 \clearpage
