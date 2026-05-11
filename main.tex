@@ -70,7 +70,7 @@
 \usemintedstyle{friendly} % or 'monokai', 'borland', etc.
 \usepackage{listings}
 \lstset{
-    basicstyle=\ttfamily\small, % Monospace font
+    basicstyle=\ttfamily\small\color{blue}, % Monospace font
     breaklines=true,            % Enable line wrapping ✅
     breakatwhitespace=true,     % Only break at spaces (cleaner)
     columns=fullflexible,       % Better character spacing
@@ -173,8 +173,57 @@ That's it! You are done!
 %     \caption{Visualization of wxpython and it's usual stall point}
 %     \label{fig:pyvicon5}
 % \end{figure}
+replace the following into your setup.py file in pyvicon folder, which is located in \textit{Downloads/pyvicon-master/pyvicon/setup.py}. This replaces the dependency of the old boost library to the new boost library, which is the one that is compatible with the Vicon SDK you downloaded. The code is shown below:
+
+\begin{lstlisting}
+    from distutils.core import setup, Extension
+import os
+
+CONDA_PREFIX = os.environ.get("CONDA_PREFIX", "")
+
+module = Extension(
+    'pyvicon_module',
+    sources=['pyvicon/pyvicon.cpp'],
+
+    # Modern Boost names (no -mt, no version suffix)
+    libraries=[
+        'ViconDataStreamSDK_CPP',
+        'boost_system',
+        'boost_thread',
+        'boost_chrono',
+        'boost_date_time'
+    ],
+
+    # Where to find .so files
+    library_dirs=[
+        os.path.join(CONDA_PREFIX, "lib"),
+        "/usr/lib/x86_64-linux-gnu"
+    ],
+
+    # Where to find header files
+    include_dirs=[
+        os.path.join(CONDA_PREFIX, "include"),
+        "/usr/include"
+    ],
+
+    # Ensure C++11 compatibility
+    extra_compile_args=["-std=c++11"],
+)
+
+setup(
+    name='pyvicon',
+    version='0.2',
+    description='Modernized Python wrapper for Vicon DataStream SDK',
+    author='Matthew (patched)',
+    packages=['pyvicon'],
+    ext_modules=[module]
+)
+
+\end{lstlisting}
 
 \clearpage
+
 \bibliographystyle{unsrt} % Orders references by citation order
 \bibliography{bibliography}
+
 \end{document}

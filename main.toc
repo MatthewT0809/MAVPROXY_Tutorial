@@ -3,11 +3,9 @@
 \contentsline {subsection}{\numberline {2.1}Hardware Required}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Setting Up Conda Virtual Environment}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Downloading VICON SDK}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Downloading pyvicon}{9}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Merging VICON SDK into pyvicon}{10}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Setting up pyvicon}{11}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Installing Dependencies Packages}{12}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Hardware setup}{13}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Network setup}{14}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Installing Mavproxy \& Mavlink}{15}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}Finishing}{16}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.4}Downloading pyvicon}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Merging VICON SDK into pyvicon}{11}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Installing Dependencies Packages}{13}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Setting up pyvicon}{13}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Installing Mavproxy \& Mavlink}{14}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Network setup}{15}{subsection.2.9}%
